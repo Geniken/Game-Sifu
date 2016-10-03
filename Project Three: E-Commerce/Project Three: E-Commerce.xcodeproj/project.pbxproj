@@ -16,6 +16,10 @@
 		8B84501F1D9B4770000609D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B84501E1D9B4770000609D8 /* Assets.xcassets */; };
 		8B8450221D9B4770000609D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8450201D9B4770000609D8 /* LaunchScreen.storyboard */; };
 		8BB06FB11D9ED81C007798D6 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB06FB01D9ED81C007798D6 /* GameInfo.swift */; };
+		8BB0700B1DA2DE43007798D6 /* Ebay ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0700A1DA2DE43007798D6 /* Ebay ID.swift */; };
+		8BB0700D1DA2DF24007798D6 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0700C1DA2DF24007798D6 /* Review.swift */; };
+		8BB0700F1DA2DF82007798D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0700E1DA2DF82007798D6 /* User.swift */; };
+		8BB070111DA2DFE3007798D6 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070101DA2DFE3007798D6 /* Merchant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		8B8450211D9B4770000609D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8450231D9B4770000609D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB06FB01D9ED81C007798D6 /* GameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
+		8BB0700A1DA2DE43007798D6 /* Ebay ID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ebay ID.swift"; sourceTree = "<group>"; };
+		8BB0700C1DA2DF24007798D6 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		8BB0700E1DA2DF82007798D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BB070101DA2DFE3007798D6 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				8BB06FB01D9ED81C007798D6 /* GameInfo.swift */,
+				8BB0700C1DA2DF24007798D6 /* Review.swift */,
+				8BB0700E1DA2DF82007798D6 /* User.swift */,
+				8BB070101DA2DFE3007798D6 /* Merchant.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 				8B630D211D9C8D28003D0006 /* Checkout.storyboard */,
 				8B8450201D9B4770000609D8 /* LaunchScreen.storyboard */,
 				8B8450231D9B4770000609D8 /* Info.plist */,
+				8BB0700A1DA2DE43007798D6 /* Ebay ID.swift */,
 			);
 			path = "Project Three: E-Commerce";
 			sourceTree = "<group>";
@@ -177,7 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB06FB11D9ED81C007798D6 /* GameInfo.swift in Sources */,
+				8BB070111DA2DFE3007798D6 /* Merchant.swift in Sources */,
+				8BB0700D1DA2DF24007798D6 /* Review.swift in Sources */,
+				8BB0700F1DA2DF82007798D6 /* User.swift in Sources */,
 				8B84501A1D9B4770000609D8 /* ViewController.swift in Sources */,
+				8BB0700B1DA2DE43007798D6 /* Ebay ID.swift in Sources */,
 				8B8450181D9B4770000609D8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
