@@ -10,7 +10,6 @@ import Foundation
 
 struct GameInfo {
     let image:URL
-    let description: String
     let cost: String
     //    let similarGames: [URL]
 }
@@ -19,14 +18,13 @@ struct GameInfo {
 extension GameInfo {
     static func fromDictionary(dictionary: NSDictionary) -> GameInfo? {
         
-        guard let image = dictionary[" "] as? URL,
-            let description = dictionary[" "] as? String,
-            let cost = dictionary[" "] as? String
+        guard let image = dictionary["galleryURL"] as? URL,
+            let cost = dictionary["ConvertedCurrentPrice"] as? String
             else {
                 print ("unable to retreive information")
                 return nil
         }
         
-        return GameInfo (image:image, description:description, cost:cost)
+        return GameInfo (image:image, cost:cost)
     }
 }
