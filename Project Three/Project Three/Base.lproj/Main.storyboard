@@ -300,18 +300,46 @@
         <scene sceneID="iCr-pQ-TMb">
             <objects>
                 <tableViewController id="ElL-nl-4BT" userLabel="Nintendo Games" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="B29-R0-hoE">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="171" sectionHeaderHeight="28" sectionFooterHeight="28" id="B29-R0-hoE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.16020598920000001" green="0.30437315370000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="3Og-m0-7m7">
-                                <rect key="frame" x="0.0" y="92" width="375" height="140"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="171" id="3Og-m0-7m7">
+                                <rect key="frame" x="0.0" y="92" width="375" height="171"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Og-m0-7m7" id="Rgj-Xa-Brf">
-                                    <frame key="frameInset" width="375" height="139"/>
+                                    <frame key="frameInset" width="375" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7r-tN-w0d">
+                                            <frame key="frameInset" minX="8" minY="8" width="359" height="154"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-cV-c5H" userLabel="Game Image">
+                                                    <frame key="frameInset" minX="8" minY="8" width="343" height="138"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-lQ-hth" userLabel="GameName View">
+                                                    <frame key="frameInset" minY="119" width="116" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vly-iy-WbV">
+                                                            <frame key="frameInset" minX="8" minY="3" width="108" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.16020598920000001" green="0.30437315370000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="MDn-4N-dma" kind="show" id="lFG-VP-ZxU"/>
                                 </connections>
@@ -322,10 +350,27 @@
                             <outlet property="delegate" destination="ElL-nl-4BT" id="GX4-xI-OUH"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="j3M-JG-KtD">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="73p-Yh-oy9">
+                            <rect key="frame" x="113" y="6" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ly-Jw-V2C">
+                                    <frame key="frameInset" minX="54" minY="6" width="57" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7g-Ex-lTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3214" y="-577"/>
+            <point key="canvasLocation" x="3196" y="161.91904047976013"/>
         </scene>
         <!--Additional Info-->
         <scene sceneID="IK1-EL-aUR">
@@ -361,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBd-bq-aio" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4237.6000000000004" y="161.91904047976013"/>
+            <point key="canvasLocation" x="4084" y="163"/>
         </scene>
         <!--Sega Consoles-->
         <scene sceneID="Mz6-rv-Qge">
@@ -401,7 +446,7 @@
                                         <frame key="frameInset" width="343" height="191"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="Doo-wo-TEH" kind="show" id="SAh-V0-rZf"/>
+                                            <segue destination="ElL-nl-4BT" kind="show" id="KBF-rY-c9w"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -433,7 +478,7 @@
                                         <frame key="frameInset" width="343" height="191"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="Doo-wo-TEH" kind="show" id="fxY-Lx-NSk"/>
+                                            <segue destination="ElL-nl-4BT" kind="show" id="HXt-j7-6H0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -451,7 +496,7 @@
                                         <frame key="frameInset" minY="-13" width="343" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="Doo-wo-TEH" kind="show" id="LvM-wM-8tm"/>
+                                            <segue destination="ElL-nl-4BT" kind="show" id="Gd8-BR-lXW"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p26-St-i5F">
@@ -495,37 +540,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Fd-8r-vkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2296.8000000000002" y="953.52323838080963"/>
-        </scene>
-        <!--Sega Games-->
-        <scene sceneID="5NZ-iX-Su0">
-            <objects>
-                <tableViewController id="Doo-wo-TEH" userLabel="Sega Games" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="icR-2b-mPy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="x7u-I4-zyC">
-                                <rect key="frame" x="0.0" y="92" width="375" height="140"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x7u-I4-zyC" id="iFZ-jG-9kk">
-                                    <frame key="frameInset" width="375" height="139"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="MDn-4N-dma" kind="show" id="U4O-ld-obz"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Doo-wo-TEH" id="rcn-RM-0V3"/>
-                            <outlet property="delegate" destination="Doo-wo-TEH" id="BLq-J9-Dtx"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1vx-0I-a6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3214" y="954"/>
         </scene>
         <!--Playstation Consoles-->
         <scene sceneID="Zeb-4R-L01">
@@ -589,14 +603,14 @@
                                 <frame key="frameInset" minX="16" minY="85" width="343" height="275"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Jcl-Qx-Uqa" kind="show" id="8QJ-EU-ltN"/>
+                                    <segue destination="ElL-nl-4BT" kind="show" id="7jm-6k-ANr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gg-xl-HyH" userLabel="PS2 Button">
                                 <frame key="frameInset" minX="16" minY="372" width="343" height="275"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Jcl-Qx-Uqa" kind="show" id="cK7-BH-h91"/>
+                                    <segue destination="ElL-nl-4BT" kind="show" id="zUP-ae-mL5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -623,37 +637,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3J-gJ-ng7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2296.8000000000002" y="161.91904047976013"/>
-        </scene>
-        <!--Playstation Games -->
-        <scene sceneID="slM-of-4nj">
-            <objects>
-                <tableViewController id="Jcl-Qx-Uqa" userLabel="Playstation Games " sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5ch-Bf-4nh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="5UA-TP-KrQ">
-                                <rect key="frame" x="0.0" y="92" width="375" height="140"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5UA-TP-KrQ" id="98t-Qy-SG5">
-                                    <frame key="frameInset" width="375" height="139"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="MDn-4N-dma" kind="show" id="0Gz-uw-01q"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Jcl-Qx-Uqa" id="qJV-Rs-FML"/>
-                            <outlet property="delegate" destination="Jcl-Qx-Uqa" id="J0q-1J-AMw"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CKD-p2-Nfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3214" y="162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wm9-Dv-muw">
@@ -690,9 +673,6 @@
         <image name="nintendo-64-console" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cK7-BH-h91"/>
-        <segue reference="sBl-EO-yZE"/>
-        <segue reference="lFG-VP-ZxU"/>
-        <segue reference="fxY-Lx-NSk"/>
+        <segue reference="zUP-ae-mL5"/>
     </inferredMetricsTieBreakers>
 </document>
