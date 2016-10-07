@@ -16,7 +16,7 @@ struct GameInfo {
 
 
 extension GameInfo {
-    static func fromDictionary(dictionary: NSDictionary) -> GameInfo? {
+    static func fromDictionary(_ dictionary: NSDictionary) -> GameInfo? {
         
         guard let image = dictionary["galleryURL"] as? URL,
             let cost = dictionary["ConvertedCurrentPrice"] as? String

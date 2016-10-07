@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79AF1F43D0815015B5FCB1E8 /* Pods_Project_Three.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FF827577400B9835346E33 /* Pods_Project_Three.framework */; };
 		8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070241DA3334F007798D6 /* AppDelegate.swift */; };
 		8BB070271DA3334F007798D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070261DA3334F007798D6 /* ViewController.swift */; };
 		8BB0702A1DA3334F007798D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB070281DA3334F007798D6 /* Main.storyboard */; };
@@ -16,9 +17,16 @@
 		8BB0703B1DA33399007798D6 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070371DA33399007798D6 /* GameInfo.swift */; };
 		8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070381DA33399007798D6 /* Merchant.swift */; };
 		8BB0703D1DA33399007798D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070391DA33399007798D6 /* User.swift */; };
+		8BC636961DA7391E008CAF3C /* Playstation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636951DA7391E008CAF3C /* Playstation.gif */; };
+		8BC636981DA73923008CAF3C /* Sega.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636971DA73923008CAF3C /* Sega.gif */; };
+		8BC6369A1DA73927008CAF3C /* Nintendo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636991DA73927008CAF3C /* Nintendo.gif */; };
+		8BCD12E11DA5BF7300185AB3 /* Ebay Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD12E01DA5BF7300185AB3 /* Ebay Login.swift */; };
+		8BCD12E31DA5C5E500185AB3 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD12E21DA5C5E500185AB3 /* Start.swift */; };
+		8BCD13141DA6C29000185AB3 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79FF827577400B9835346E33 /* Pods_Project_Three.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Three.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB070211DA3334F007798D6 /* Project Three.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Three.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB070241DA3334F007798D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BB070261DA3334F007798D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +38,14 @@
 		8BB070371DA33399007798D6 /* GameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
 		8BB070381DA33399007798D6 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
 		8BB070391DA33399007798D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BC636951DA7391E008CAF3C /* Playstation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation.gif; sourceTree = "<group>"; };
+		8BC636971DA73923008CAF3C /* Sega.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sega.gif; sourceTree = "<group>"; };
+		8BC636991DA73927008CAF3C /* Nintendo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nintendo.gif; sourceTree = "<group>"; };
+		8BCD12E01DA5BF7300185AB3 /* Ebay Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ebay Login.swift"; sourceTree = "<group>"; };
+		8BCD12E21DA5C5E500185AB3 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		CBCD956285E69B213ACC00C8 /* Pods-Project Three.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Three.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project Three/Pods-Project Three.debug.xcconfig"; sourceTree = "<group>"; };
+		D0A9E331C641A99B15BF406E /* Pods-Project Three.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Three.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project Three/Pods-Project Three.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AF1F43D0815015B5FCB1E8 /* Pods_Project_Three.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22FBAFE8744E4103E486DCEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD956285E69B213ACC00C8 /* Pods-Project Three.debug.xcconfig */,
+				D0A9E331C641A99B15BF406E /* Pods-Project Three.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49FF82C3F9ACBA04F44C772F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79FF827577400B9835346E33 /* Pods_Project_Three.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BB070181DA3334F007798D6 = {
 			isa = PBXGroup;
 			children = (
 				8BB070231DA3334F007798D6 /* Project Three */,
 				8BB070221DA3334F007798D6 /* Products */,
+				22FBAFE8744E4103E486DCEA /* Pods */,
+				49FF82C3F9ACBA04F44C772F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,12 +100,12 @@
 			children = (
 				8BB0703F1DA33CE2007798D6 /* Views */,
 				8BB0703E1DA333A8007798D6 /* Model */,
-				8BB070241DA3334F007798D6 /* AppDelegate.swift */,
-				8BB070261DA3334F007798D6 /* ViewController.swift */,
-				8BB070281DA3334F007798D6 /* Main.storyboard */,
+				8BCD13121DA6C22800185AB3 /* View Controllers */,
 				8BB0702B1DA3334F007798D6 /* Assets.xcassets */,
+				8BB070281DA3334F007798D6 /* Main.storyboard */,
 				8BB0702D1DA3334F007798D6 /* LaunchScreen.storyboard */,
 				8BB070301DA3334F007798D6 /* Info.plist */,
+				8BC6369B1DA73934008CAF3C /* Gif */,
 			);
 			path = "Project Three";
 			sourceTree = "<group>";
@@ -88,8 +124,30 @@
 		8BB0703F1DA33CE2007798D6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8BB070241DA3334F007798D6 /* AppDelegate.swift */,
+				8BCD12E01DA5BF7300185AB3 /* Ebay Login.swift */,
+				8BCD12E21DA5C5E500185AB3 /* Start.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		8BC6369B1DA73934008CAF3C /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				8BC636951DA7391E008CAF3C /* Playstation.gif */,
+				8BC636971DA73923008CAF3C /* Sega.gif */,
+				8BC636991DA73927008CAF3C /* Nintendo.gif */,
+			);
+			name = Gif;
+			sourceTree = "<group>";
+		};
+		8BCD13121DA6C22800185AB3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BB070261DA3334F007798D6 /* ViewController.swift */,
+				8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BB070331DA3334F007798D6 /* Build configuration list for PBXNativeTarget "Project Three" */;
 			buildPhases = (
+				1722CC91421CC6E534B7483E /* [CP] Check Pods Manifest.lock */,
 				8BB0701D1DA3334F007798D6 /* Sources */,
 				8BB0701E1DA3334F007798D6 /* Frameworks */,
 				8BB0701F1DA3334F007798D6 /* Resources */,
+				3B880F9BF915036B21B15097 /* [CP] Embed Pods Frameworks */,
+				E035461AB5AEFF6107294025 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +186,7 @@
 					8BB070201DA3334F007798D6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = P257QVWC92;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,12 +215,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB0702F1DA3334F007798D6 /* LaunchScreen.storyboard in Resources */,
+				8BC6369A1DA73927008CAF3C /* Nintendo.gif in Resources */,
 				8BB0702C1DA3334F007798D6 /* Assets.xcassets in Resources */,
 				8BB0702A1DA3334F007798D6 /* Main.storyboard in Resources */,
+				8BC636981DA73923008CAF3C /* Sega.gif in Resources */,
+				8BC636961DA7391E008CAF3C /* Playstation.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1722CC91421CC6E534B7483E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B880F9BF915036B21B15097 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project Three/Pods-Project Three-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E035461AB5AEFF6107294025 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project Three/Pods-Project Three-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BB0701D1DA3334F007798D6 /* Sources */ = {
@@ -167,10 +280,13 @@
 			files = (
 				8BB0703A1DA33399007798D6 /* Description.swift in Sources */,
 				8BB070271DA3334F007798D6 /* ViewController.swift in Sources */,
+				8BCD13141DA6C29000185AB3 /* CategoriesViewController.swift in Sources */,
 				8BB0703D1DA33399007798D6 /* User.swift in Sources */,
 				8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */,
+				8BCD12E31DA5C5E500185AB3 /* Start.swift in Sources */,
 				8BB0703B1DA33399007798D6 /* GameInfo.swift in Sources */,
 				8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */,
+				8BCD12E11DA5BF7300185AB3 /* Ebay Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +407,7 @@
 		};
 		8BB070341DA3334F007798D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCD956285E69B213ACC00C8 /* Pods-Project Three.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P257QVWC92;
@@ -304,6 +421,7 @@
 		};
 		8BB070351DA3334F007798D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0A9E331C641A99B15BF406E /* Pods-Project Three.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P257QVWC92;
