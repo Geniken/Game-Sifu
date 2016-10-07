@@ -17,7 +17,7 @@
                BlueprintIdentifier = "8BB070201DA3334F007798D6"
                BuildableName = "Project Three.app"
                BlueprintName = "Project Three"
-               ReferencedContainer = "container:Project Three.xcodeproj">
+               ReferencedContainer = "container:Game Sifu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "8BB070201DA3334F007798D6"
             BuildableName = "Project Three.app"
             BlueprintName = "Project Three"
-            ReferencedContainer = "container:Project Three.xcodeproj">
+            ReferencedContainer = "container:Game Sifu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "8BB070201DA3334F007798D6"
             BuildableName = "Project Three.app"
             BlueprintName = "Project Three"
-            ReferencedContainer = "container:Project Three.xcodeproj">
+            ReferencedContainer = "container:Game Sifu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "8BB070201DA3334F007798D6"
             BuildableName = "Project Three.app"
             BlueprintName = "Project Three"
-            ReferencedContainer = "container:Project Three.xcodeproj">
+            ReferencedContainer = "container:Game Sifu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

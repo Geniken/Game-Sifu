@@ -30,6 +30,7 @@ class CategoriesViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     func gifs () {
+        
         nintendoGif.image = UIImage.gifWithName("Nintendo")
         
         segaGif.image = UIImage.gifWithName("Sega")

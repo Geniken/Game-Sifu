@@ -17,6 +17,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var segaGif: UIImageView!
     
+    @IBOutlet weak var playstation1Gif: UIImageView!
+    
+    @IBOutlet weak var playstation2Gif: UIImageView!
+    
+    @IBOutlet weak var nintendo64Gif: UIImageView!
+    
+    @IBOutlet weak var gamecubeGif: UIImageView!
+    
+    @IBOutlet weak var GBAGif: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +46,16 @@ class ViewController: UIViewController {
         segaGif.image = UIImage.gifWithName("Sega")
         
         playstationGif.image = UIImage.gifWithName("Playstation")
+        
+        playstation1Gif.image = UIImage.gifWithName("Playstation1")
+        
+        playstation2Gif.image = UIImage.gifWithName("Playstation2")
+        
+        nintendo64Gif.image = UIImage.gifWithName("Nintendo64")
+        
+        gamecubeGif.image = UIImage.gifWithName("Gamecube")
+        
+        GBAGif.image = UIImage.gifWithName("GBA") 
         
     }
     
