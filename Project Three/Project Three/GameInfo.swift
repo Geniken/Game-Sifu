@@ -9,6 +9,7 @@
 import Foundation
 
 struct GameInfo {
+    let name:String
     let image:URL
     let ratings: Double
     let reviews: [String]

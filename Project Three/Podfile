@@ -1,8 +1,17 @@
-# Uncomment this line to define a global platform for your project
+
 platform :ios, '9.0'
 use_frameworks!
 
 target 'Project Three' do
-	pod ‘SwiftGifOrigin’ 
+	
+	pod 'SwiftGifOrigin', :git => 'https://github.com/bahlo/SwiftGif', :tag => ‘v1.6’
 
+	pod ‘SideMenu’
+
+	pod ‘Firebase/Core’
+    
+    pod 'Firebase/Database'
+    
+    pod 'Parse'
+    
 end

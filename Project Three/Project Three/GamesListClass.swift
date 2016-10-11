@@ -37,7 +37,7 @@ struct ItemInfo {
             
             guard let dictionary = i as? NSDictionary else { return nil }
             
-            guard let currentPriceArray = dictionary["currentPrice"] as? NSArray else { return nil }
+            guard (dictionary["currentPrice"] as? NSArray) != nil else { return nil }
 
 //            for i in currentPriceArray {
 //                

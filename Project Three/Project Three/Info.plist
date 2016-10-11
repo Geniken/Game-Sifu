@@ -45,5 +45,10 @@
 	<string>allow the messenger to access your photos</string>
 	<key>NSCameraUsageDescription</key>
 	<string>allow the messenger to access your camera</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

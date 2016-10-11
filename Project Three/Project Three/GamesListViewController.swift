@@ -30,7 +30,7 @@ class GamesListViewController: UITableViewController {
         let emptyString = searchURL + keyword + inputKeyword
         
         let url = URL(string: emptyString)!
-
+        
         guard let data = try? Data(contentsOf: url),
             let json = (try? JSONSerialization.jsonObject(with: data, options: .mutableContainers)) as? NSDictionary else {
                 return
@@ -63,35 +63,15 @@ class GamesListViewController: UITableViewController {
                     }
                     
                 }
-
+                
                 return
             }
-            
-            
-
-//            guard let items = dictionary["searchResult"] as? NSDictionary else {
-//                return }
-//            print(items)
-//            for index in items {
-//            
-//                guard let dictionary = index as? NSDictionary else {return}
-//                
-//                guard let game = ItemInfo.fromjson(dictionary: dictionary) else {
-//                    print("error in guard")
-//                    return }
-//                
-//                gameInfoArray.append(game)
-//                
-//            }
-            
-            
-            
             
         }
         
     }
     
-
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -101,9 +81,13 @@ class GamesListViewController: UITableViewController {
         return 10
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        let gameInfo = gameInfoArray[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? GamesListTableViewCell else { return UITableViewCell() }
+        
+//        let gameInfo = gameInfoArray[indexPath.row]
+
+      
+//        cell.gameName.text = gameInfo.title as! String
         
         return cell
     }

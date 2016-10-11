@@ -19,6 +19,7 @@
 		8B6BD8B21DA824BA0099DE1E /* Nintendo64.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B11DA824BA0099DE1E /* Nintendo64.gif */; };
 		8B6BD8B61DA82EC60099DE1E /* Playstation2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */; };
 		8B6BD8B81DA834560099DE1E /* Playstation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B71DA834560099DE1E /* Playstation1.gif */; };
+		8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */; };
 		8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070241DA3334F007798D6 /* AppDelegate.swift */; };
 		8BB070271DA3334F007798D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070261DA3334F007798D6 /* ViewController.swift */; };
 		8BB0702A1DA3334F007798D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB070281DA3334F007798D6 /* Main.storyboard */; };
@@ -27,11 +28,15 @@
 		8BB0703A1DA33399007798D6 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070361DA33399007798D6 /* Description.swift */; };
 		8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070381DA33399007798D6 /* Merchant.swift */; };
 		8BB0703D1DA33399007798D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070391DA33399007798D6 /* User.swift */; };
+		8BB276761DAC393A00553A20 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB276751DAC393A00553A20 /* AddItemViewController.swift */; };
+		8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB276791DAC524400553A20 /* AddItem.swift */; };
+		8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */; };
+		8BC5C8651DAC99D8006BBA63 /* GameSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */; };
+		8BC5C8671DACACD8006BBA63 /* id key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C8661DACACD8006BBA63 /* id key.swift */; };
 		8BC636961DA7391E008CAF3C /* Playstation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636951DA7391E008CAF3C /* Playstation.gif */; };
 		8BC636981DA73923008CAF3C /* Sega.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636971DA73923008CAF3C /* Sega.gif */; };
 		8BC6369A1DA73927008CAF3C /* Nintendo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636991DA73927008CAF3C /* Nintendo.gif */; };
-		8BCD12E11DA5BF7300185AB3 /* Ebay Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD12E01DA5BF7300185AB3 /* Ebay Login.swift */; };
-		8BCD12E31DA5C5E500185AB3 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD12E21DA5C5E500185AB3 /* Start.swift */; };
+		8BCD12E11DA5BF7300185AB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD12E01DA5BF7300185AB3 /* LoginViewController.swift */; };
 		8BCD13141DA6C29000185AB3 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +53,7 @@
 		8B6BD8B11DA824BA0099DE1E /* Nintendo64.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nintendo64.gif; sourceTree = "<group>"; };
 		8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation2.gif; sourceTree = "<group>"; };
 		8B6BD8B71DA834560099DE1E /* Playstation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation1.gif; sourceTree = "<group>"; };
+		8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableViewCell.swift; sourceTree = "<group>"; };
 		8BB070211DA3334F007798D6 /* Project Three.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Three.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB070241DA3334F007798D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BB070261DA3334F007798D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +64,15 @@
 		8BB070361DA33399007798D6 /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		8BB070381DA33399007798D6 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
 		8BB070391DA33399007798D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BB276751DAC393A00553A20 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		8BB276791DAC524400553A20 /* AddItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
+		8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionViewController.swift; sourceTree = "<group>"; };
+		8BC5C8661DACACD8006BBA63 /* id key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "id key.swift"; sourceTree = "<group>"; };
 		8BC636951DA7391E008CAF3C /* Playstation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation.gif; sourceTree = "<group>"; };
 		8BC636971DA73923008CAF3C /* Sega.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sega.gif; sourceTree = "<group>"; };
 		8BC636991DA73927008CAF3C /* Nintendo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nintendo.gif; sourceTree = "<group>"; };
-		8BCD12E01DA5BF7300185AB3 /* Ebay Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ebay Login.swift"; sourceTree = "<group>"; };
-		8BCD12E21DA5C5E500185AB3 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		8BCD12E01DA5BF7300185AB3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		CBCD956285E69B213ACC00C8 /* Pods-Project Three.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Three.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project Three/Pods-Project Three.debug.xcconfig"; sourceTree = "<group>"; };
 		D0A9E331C641A99B15BF406E /* Pods-Project Three.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Three.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project Three/Pods-Project Three.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,12 +143,14 @@
 		8BB0703E1DA333A8007798D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8BC5C8661DACACD8006BBA63 /* id key.swift */,
+				8BB070391DA33399007798D6 /* User.swift */,
 				8BB070381DA33399007798D6 /* Merchant.swift */,
 				8B6BD89B1DA81C410099DE1E /* GameInfo.swift */,
 				8B6BD89D1DA81C610099DE1E /* GameListCell.swift */,
 				8B6BD89F1DA81C670099DE1E /* GamesListClass.swift */,
+				8BB276791DAC524400553A20 /* AddItem.swift */,
 				8BB070361DA33399007798D6 /* Description.swift */,
-				8BB070391DA33399007798D6 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -147,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				8BB070241DA3334F007798D6 /* AppDelegate.swift */,
-				8BCD12E01DA5BF7300185AB3 /* Ebay Login.swift */,
-				8BCD12E21DA5C5E500185AB3 /* Start.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -173,9 +183,14 @@
 			children = (
 				8B6BD8A11DA81C6F0099DE1E /* GamesListViewController.swift */,
 				8BB070261DA3334F007798D6 /* ViewController.swift */,
+				8BCD12E01DA5BF7300185AB3 /* LoginViewController.swift */,
 				8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */,
 				8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */,
+				8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */,
 				8B6BD8AF1DA820FF0099DE1E /* PlaystationTableViewController.swift */,
+				8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */,
+				8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */,
+				8BB276751DAC393A00553A20 /* AddItemViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -273,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3B880F9BF915036B21B15097 /* [CP] Embed Pods Frameworks */ = {
@@ -314,7 +329,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB0703A1DA33399007798D6 /* Description.swift in Sources */,
+				8BB276761DAC393A00553A20 /* AddItemViewController.swift in Sources */,
 				8BB070271DA3334F007798D6 /* ViewController.swift in Sources */,
+				8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */,
 				8B6BD8AE1DA820EB0099DE1E /* NintendoTableViewController.swift in Sources */,
 				8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */,
 				8B6BD8B01DA820FF0099DE1E /* PlaystationTableViewController.swift in Sources */,
@@ -322,11 +339,14 @@
 				8BB0703D1DA33399007798D6 /* User.swift in Sources */,
 				8B6BD8A01DA81C670099DE1E /* GamesListClass.swift in Sources */,
 				8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */,
-				8BCD12E31DA5C5E500185AB3 /* Start.swift in Sources */,
+				8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */,
+				8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */,
 				8B6BD8A21DA81C6F0099DE1E /* GamesListViewController.swift in Sources */,
 				8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */,
-				8BCD12E11DA5BF7300185AB3 /* Ebay Login.swift in Sources */,
+				8BCD12E11DA5BF7300185AB3 /* LoginViewController.swift in Sources */,
+				8BC5C8671DACACD8006BBA63 /* id key.swift in Sources */,
 				8B6BD89E1DA81C610099DE1E /* GameListCell.swift in Sources */,
+				8BC5C8651DAC99D8006BBA63 /* GameSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,21 +41,21 @@ class ViewController: UIViewController {
     
     func gifs () {
 
-        nintendoGif.image = UIImage.gifWithName("Nintendo")
+        nintendoGif.image = UIImage.gif(name: "Nintendo")
         
-        segaGif.image = UIImage.gifWithName("Sega")
+        segaGif.image = UIImage.gif(name: "Sega")
         
-        playstationGif.image = UIImage.gifWithName("Playstation")
+        playstationGif.image = UIImage.gif(name:"Playstation")
         
-        playstation1Gif.image = UIImage.gifWithName("Playstation1")
+        playstation1Gif.image = UIImage.gif(name:"Playstation1")
         
-        playstation2Gif.image = UIImage.gifWithName("Playstation2")
+        playstation2Gif.image = UIImage.gif(name:"Playstation2")
         
-        nintendo64Gif.image = UIImage.gifWithName("Nintendo64")
+        nintendo64Gif.image = UIImage.gif(name:"Nintendo64")
         
-        gamecubeGif.image = UIImage.gifWithName("Gamecube")
+        gamecubeGif.image = UIImage.gif(name:"Gamecube")
         
-        GBAGif.image = UIImage.gifWithName("GBA") 
+        GBAGif.image = UIImage.gif(name:"GBA")
         
     }
     

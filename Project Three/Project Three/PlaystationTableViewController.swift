@@ -27,9 +27,9 @@ class PlaystationTableViewController: UITableViewController {
     
     func gifs () {
         
-        playstation1Gif.image = UIImage.gifWithName("Playstation1")
+        playstation1Gif.image = UIImage.gif(name: "Playstation1")
         
-        playstation2Gif.image = UIImage.gifWithName("Playstation2")
+        playstation2Gif.image = UIImage.gif(name: "Playstation2")
         
     }
     

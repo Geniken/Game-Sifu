@@ -31,11 +31,11 @@ class CategoriesViewController: UITableViewController {
     }
     func gifs () {
         
-        nintendoGif.image = UIImage.gifWithName("Nintendo")
+        nintendoGif.image = UIImage.gif(name:"Nintendo")
         
-        segaGif.image = UIImage.gifWithName("Sega")
+        segaGif.image = UIImage.gif(name:"Sega")
         
-        playstationGif.image = UIImage.gifWithName("Playstation")
+        playstationGif.image = UIImage.gif(name:"Playstation")
         
         
     }
