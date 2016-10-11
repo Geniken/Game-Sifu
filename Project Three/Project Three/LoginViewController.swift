@@ -16,20 +16,20 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         
         
-        let testObject = PFObject(className: "Name")
-        testObject["name"] = "Daniel"
-        testObject.saveInBackground { (success, error) -> Void in
-            
-            testObject.saveInBackground()
-            print("Object has been saved.")
+//        let testObject = PFObject(className: "Name")
+//        testObject["name"] = "Daniel"
+//        testObject.saveInBackground { (success, error) -> Void in
+//            
+//            testObject.saveInBackground()
+//            print("Object has been saved.")
         }
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-  
-    }
-    
-}
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//  
+//    }
+//    
+//}
 

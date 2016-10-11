@@ -11,7 +11,7 @@ import Foundation
 
 struct AddItemInfo {
     
-    var name:String
+    var gameName:String
     var price:Double
     var quantity:Int
     var yearsOwned:Double

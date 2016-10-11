@@ -128,13 +128,13 @@
 		8BB070231DA3334F007798D6 /* Project Three */ = {
 			isa = PBXGroup;
 			children = (
+				8BB070281DA3334F007798D6 /* Main.storyboard */,
+				8BB0702D1DA3334F007798D6 /* LaunchScreen.storyboard */,
+				8BB0702B1DA3334F007798D6 /* Assets.xcassets */,
+				8BB070301DA3334F007798D6 /* Info.plist */,
 				8BB0703F1DA33CE2007798D6 /* Views */,
 				8BB0703E1DA333A8007798D6 /* Model */,
 				8BCD13121DA6C22800185AB3 /* View Controllers */,
-				8BB0702B1DA3334F007798D6 /* Assets.xcassets */,
-				8BB070281DA3334F007798D6 /* Main.storyboard */,
-				8BB0702D1DA3334F007798D6 /* LaunchScreen.storyboard */,
-				8BB070301DA3334F007798D6 /* Info.plist */,
 				8BC6369B1DA73934008CAF3C /* Gif */,
 			);
 			path = "Project Three";
