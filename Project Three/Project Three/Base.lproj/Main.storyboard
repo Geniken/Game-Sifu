@@ -46,6 +46,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="loginButtonPressed:" destination="q1z-Mw-lqh" eventType="touchUpInside" id="fs4-S7-KzQ"/>
                                             <segue destination="82k-PQ-lKh" kind="show" id="iPk-UL-urb"/>
                                         </connections>
                                     </button>
@@ -80,6 +81,11 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loginButton" destination="qrI-Aq-eKT" id="leJ-mQ-TvK"/>
+                        <outlet property="passwordTextField" destination="eX7-BK-6hI" id="9CG-cp-fz9"/>
+                        <outlet property="userNameTextField" destination="PcI-8m-5BS" id="H8H-yA-c2M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNe-wN-jyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +169,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="285"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2fG-sU-QrW" id="g68-xQ-Jpi">
-                                            <frame key="frameInset" width="375" height="284"/>
+                                            <frame key="frameInset" width="375" height="285"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQP-aG-iNj" userLabel="Nintendo View">
@@ -186,7 +192,7 @@
                                                     </constraints>
                                                 </view>
                                                 <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQa-cs-isn">
-                                                    <frame key="frameInset" minX="7" minY="3" height="44" maxX="11"/>
+                                                    <frame key="frameInset" minX="6" minY="3" height="44" maxX="18"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="barTintColor" red="0.59705379012199145" green="0.58613232105420343" blue="0.63402083333333326" alpha="1" colorSpace="calibratedRGB"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -205,7 +211,7 @@
                                         <rect key="frame" x="0.0" y="349" width="375" height="255"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Atd-Co-anW" id="KcT-2C-xkM">
-                                            <frame key="frameInset" width="375" height="254"/>
+                                            <frame key="frameInset" width="375" height="255"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1da-uk-q9f" userLabel="PS View">
@@ -234,7 +240,7 @@
                                         <rect key="frame" x="0.0" y="604" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7sc-aN-2GU" id="ZDa-0w-h31">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <frame key="frameInset" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0k-C8-uZ5" userLabel="Sega View">
@@ -309,7 +315,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o96-kE-p7Z" id="sOu-UJ-vXe">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <frame key="frameInset" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mog-Sk-o8s" userLabel="Nintendo">
@@ -350,7 +356,7 @@
                                         <rect key="frame" x="0.0" y="314" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3rI-Wm-gTJ" id="PPn-Jz-XAR">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <frame key="frameInset" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kkM-7E-HVM" userLabel="GameCube">
@@ -393,7 +399,7 @@
                                         <rect key="frame" x="0.0" y="564" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3v1-db-FTc" id="dG9-bO-r1f">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <frame key="frameInset" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKV-pf-xch" userLabel="GameBoy">
@@ -487,7 +493,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="328"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KNB-1G-rFL" id="aqZ-Nd-Qqu">
-                                            <frame key="frameInset" width="375" height="327"/>
+                                            <frame key="frameInset" width="375" height="328"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-Vf-8L8" userLabel="PS1 View">
@@ -530,7 +536,7 @@
                                         <rect key="frame" x="0.0" y="392" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zmU-tX-GYw" id="ZdB-kq-ISG">
-                                            <frame key="frameInset" width="375" height="349"/>
+                                            <frame key="frameInset" width="375" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zz-cp-Nu5" userLabel="PS2 View">
@@ -607,7 +613,7 @@
         <scene sceneID="mxL-Dw-ZfV">
             <objects>
                 <collectionViewController id="VOM-Op-CVe" userLabel="Game Selection" customClass="GameSelectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="dAh-KC-kZO">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dAh-KC-kZO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -872,7 +878,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KwP-t5-bGv" id="igB-Uy-wXa">
-                                            <frame key="frameInset" width="375" height="299"/>
+                                            <frame key="frameInset" width="375" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzI-FS-BTI">
@@ -901,7 +907,7 @@
                                         <rect key="frame" x="0.0" y="364" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nKb-AT-w3i" id="47Z-KT-C3g">
-                                            <frame key="frameInset" width="375" height="299"/>
+                                            <frame key="frameInset" width="375" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Video-Game-Wallpapers-Backgrounds" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-hP-Cxg">
@@ -1099,7 +1105,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yaP-Nk-VHm" id="Lbo-zQ-CVQ">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <frame key="frameInset" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAB-MO-uKb" userLabel="Genesis">
@@ -1142,7 +1148,7 @@
                                         <rect key="frame" x="0.0" y="314" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ahy-26-3c3" id="l8L-ab-57R">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <frame key="frameInset" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1q-3P-kuU" userLabel="Master">
@@ -1185,7 +1191,7 @@
                                         <rect key="frame" x="0.0" y="564" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S7H-6D-8IM" id="bMo-qj-X48">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <frame key="frameInset" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JP3-Ao-knG" userLabel="Game Gear">
