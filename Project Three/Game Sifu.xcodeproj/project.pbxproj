@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA3BEFD1DAD676800ECDCDF /* SignUpNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BEFC1DAD676800ECDCDF /* SignUpNewUserViewController.swift */; };
 		79AF1F43D0815015B5FCB1E8 /* Pods_Project_Three.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FF827577400B9835346E33 /* Pods_Project_Three.framework */; };
 		8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD89B1DA81C410099DE1E /* GameInfo.swift */; };
 		8B6BD89E1DA81C610099DE1E /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD89D1DA81C610099DE1E /* GameListCell.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AA3BEFC1DAD676800ECDCDF /* SignUpNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpNewUserViewController.swift; sourceTree = "<group>"; };
 		79FF827577400B9835346E33 /* Pods_Project_Three.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Three.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6BD89B1DA81C410099DE1E /* GameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
 		8B6BD89D1DA81C610099DE1E /* GameListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */,
 				8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */,
 				8BB276751DAC393A00553A20 /* AddItemViewController.swift */,
+				0AA3BEFC1DAD676800ECDCDF /* SignUpNewUserViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				8BCD13141DA6C29000185AB3 /* CategoriesViewController.swift in Sources */,
 				8BB0703D1DA33399007798D6 /* User.swift in Sources */,
 				8B6BD8A01DA81C670099DE1E /* GamesListClass.swift in Sources */,
+				0AA3BEFD1DAD676800ECDCDF /* SignUpNewUserViewController.swift in Sources */,
 				8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */,
 				8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */,
 				8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */,

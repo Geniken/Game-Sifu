@@ -26,6 +26,8 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
         
     }
     
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
   
