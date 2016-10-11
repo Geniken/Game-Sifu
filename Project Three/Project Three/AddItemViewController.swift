@@ -21,28 +21,47 @@ class AddItemViewController : UIViewController {
     
     @IBOutlet weak var gameAgeText: UITextField!
     
-    @IBAction func addPictureButton(_ sender: AnyObject) {
+    @IBOutlet weak var gameImagePicture: UIButton!
+
+    @IBOutlet weak var gameUsername: UITextField!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    @IBAction func confirmItemInfo(_ sender: UIButton) {
+        
+        registerGame()
+        
+//        dismiss(animated: true, completion: nil)
+        
     }
     
     
-        var gameScore = PFObject(className:"addGameInfo")
+    func registerGame () {
         
-        addGameInfo["gameName"] = gameNameText.text
-        addGameInfo["price"] = askingPriceText.text
-        addGameInfo["quantity"] = gameQuantityText.text
-        addGameInfo["yearsOwned"] = gameAgeText.text
+        let game = PFObject(className:"GameInformation")
         
-        AddItemInfo.saveInBackgroundWithBlock {
+        game["gameName"] = gameNameText.text
+        game["gamePrice"] = askingPriceText.text
+        game["gameQuantity"] = gameQuantityText.text
+        game["gameAge"] = gameAgeText.text
+        game["gameImage"] = gameImagePicture.image
+        game["username"] = gameUsername.text
+        
+        game.saveInBackground { (suceeded, error) in
             
-            (success: Bool, error: NSError?) -> Void in
-            
-            if (success) {
-                print("saved")
-                
+            if error != nil {
+                print ("error")
             } else {
-                
-                print("not saved")
-                
+                print ("saved")
             }
         }
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}

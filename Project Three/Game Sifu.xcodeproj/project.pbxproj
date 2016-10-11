@@ -33,6 +33,7 @@
 		8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */; };
 		8BC5C8651DAC99D8006BBA63 /* GameSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */; };
 		8BC5C8671DACACD8006BBA63 /* id key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C8661DACACD8006BBA63 /* id key.swift */; };
+		8BC5C8691DAD72C0006BBA63 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */; };
 		8BC636961DA7391E008CAF3C /* Playstation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636951DA7391E008CAF3C /* Playstation.gif */; };
 		8BC636981DA73923008CAF3C /* Sega.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636971DA73923008CAF3C /* Sega.gif */; };
 		8BC6369A1DA73927008CAF3C /* Nintendo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636991DA73927008CAF3C /* Nintendo.gif */; };
@@ -69,6 +70,7 @@
 		8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionViewController.swift; sourceTree = "<group>"; };
 		8BC5C8661DACACD8006BBA63 /* id key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "id key.swift"; sourceTree = "<group>"; };
+		8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8BC636951DA7391E008CAF3C /* Playstation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation.gif; sourceTree = "<group>"; };
 		8BC636971DA73923008CAF3C /* Sega.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sega.gif; sourceTree = "<group>"; };
 		8BC636991DA73927008CAF3C /* Nintendo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nintendo.gif; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */,
 				8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */,
 				8B6BD8AF1DA820FF0099DE1E /* PlaystationTableViewController.swift */,
+				8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */,
 				8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */,
 				8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */,
 				8BB276751DAC393A00553A20 /* AddItemViewController.swift */,
@@ -342,6 +345,7 @@
 				8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */,
 				8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */,
 				8B6BD8A21DA81C6F0099DE1E /* GamesListViewController.swift in Sources */,
+				8BC5C8691DAD72C0006BBA63 /* SignUpViewController.swift in Sources */,
 				8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */,
 				8BCD12E11DA5BF7300185AB3 /* LoginViewController.swift in Sources */,
 				8BC5C8671DACACD8006BBA63 /* id key.swift in Sources */,
