@@ -1,3 +1,4 @@
+//
 //  LoginViewController.swift
 //  Project Three
 //
@@ -16,6 +17,8 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
     
     
     override func viewDidLoad() {
@@ -69,6 +72,12 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
             }
         }
     }
+    
+    @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
+        
+        PFUser.logOut()
+    }
+    
     
     func query() {
         let query = PFUser.query()

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Daniel Kim. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import Parse
 import Bolts
