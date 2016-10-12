@@ -11,7 +11,7 @@ import UIKit
 import Parse
 
 
-class AddItemViewController : UIViewController {
+class AddItemViewController : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var gameNameText: UITextField!
     
@@ -22,23 +22,57 @@ class AddItemViewController : UIViewController {
     @IBOutlet weak var gameAgeText: UITextField!
     
     @IBOutlet weak var gameImagePicture: UIButton!
-
+    
     @IBOutlet weak var gameUsername: UITextField!
     
+    @IBOutlet weak var saveImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func confirmItemInfo(_ sender: UIButton) {
         
         registerGame()
         
-//        dismiss(animated: true, completion: nil)
+        //        dismiss(animated: true, completion: nil)
         
     }
     
+    @IBAction func imageButtonPressed(_ sender: UIButton) {
+        
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.sourceType = .camera
+        
+        present(picker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        saveImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage; dismiss(animated: true, completion: nil)
+    }
+    
+    func convertToPFFile(image: UIImage?) -> PFFile? {
+        if let image = image {
+            guard let imageData = UIImagePNGRepresentation(image) else { return nil }
+            let imageFile = PFFile(data: imageData)
+            return imageFile
+        } else {
+            return nil
+        }
+    }
     
     func registerGame () {
         
@@ -48,7 +82,7 @@ class AddItemViewController : UIViewController {
         game["gamePrice"] = askingPriceText.text
         game["gameQuantity"] = gameQuantityText.text
         game["gameAge"] = gameAgeText.text
-        game["gameImage"] = gameImagePicture.image
+        game["saveImage"] = convertToPFFile(image: saveImage.image)
         game["username"] = gameUsername.text
         
         game.saveInBackground { (suceeded, error) in
@@ -65,3 +99,5 @@ class AddItemViewController : UIViewController {
         super.didReceiveMemoryWarning()
     }
 }
+
+

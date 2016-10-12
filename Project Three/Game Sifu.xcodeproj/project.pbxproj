@@ -233,7 +233,7 @@
 				TargetAttributes = {
 					8BB070201DA3334F007798D6 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P257QVWC92;
+						DevelopmentTeam = 3TAADZBCK9;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -474,7 +474,7 @@
 			baseConfigurationReference = CBCD956285E69B213ACC00C8 /* Pods-Project Three.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P257QVWC92;
+				DEVELOPMENT_TEAM = 3TAADZBCK9;
 				INFOPLIST_FILE = "Project Three/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project-Three";
@@ -488,7 +488,7 @@
 			baseConfigurationReference = D0A9E331C641A99B15BF406E /* Pods-Project Three.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P257QVWC92;
+				DEVELOPMENT_TEAM = 3TAADZBCK9;
 				INFOPLIST_FILE = "Project Three/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project-Three";
