@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C8AA1BAF35413BDB954A1DF93576ED1</key>
+		<key>070374204E491EF7E794313D14C6950B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>55B634A454478A21B04051289220179F</key>
+		<key>21EE50EF5CA0A7BF1F767CE778132CD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C8AA1BAF35413BDB954A1DF93576ED1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A42DEEDBE901D738CE473E0136E3A25D</key>
+		<key>77961F10606687B2F709005072F5C328</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF9AE0EA494A053808594954F68294C5</key>
+		<key>B699326FDA4C9C029479572E98FE9B17</key>
 		<dict>
 			<key>primary</key>
 			<true/>

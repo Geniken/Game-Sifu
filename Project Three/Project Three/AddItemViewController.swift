@@ -26,6 +26,8 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
     
     @IBOutlet weak var gameUsername: UITextField!
     
+    @IBOutlet weak var gameConsole: UITextField!
+    
     @IBOutlet weak var saveImage: UIImageView!
     
     override func viewDidLoad() {
@@ -68,7 +70,7 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
     func convertToPFFile(image: UIImage?) -> PFFile? {
         if let gameImage = image {
             guard let imageData = UIImagePNGRepresentation(gameImage) else { return nil }
-            let imageFile = PFFile(data: imageData)
+            let imageFile = PFFile(name:"image.png", data:imageData)
             return imageFile
         } else {
             return nil
@@ -80,11 +82,12 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         let game = PFObject(className:"GameInformation")
         
         game["gameName"] = gameNameText.text
+        game["gameConsole"] = gameConsole.text
         game["gamePrice"] = askingPriceText.text
         game["gameQuantity"] = gameQuantityText.text
         game["gameAge"] = gameAgeText.text
         game["picture"] = convertToPFFile(image: saveImage.image)
-        game["username"] = gameUsername.text
+        game["Username"] = gameUsername.text
         
         game.saveInBackground { (suceeded, error) in
             
