@@ -20,8 +20,9 @@ class GameSelectionViewController: UICollectionViewController {
         queryParse()
     }
     
+    var selectedIndex: Int?
+    
     var gameInfoArray: [GameInfo] = []
-
     
     func queryParse() {
         
@@ -33,7 +34,7 @@ class GameSelectionViewController: UICollectionViewController {
             
             guard error == nil else { print("error finding objects: \(error)") ; return }
             guard let objects = objects else { return }
-            print(objects)
+            
             
             for object in objects {
                 
@@ -137,6 +138,25 @@ extension GameSelectionViewController : UICollectionViewDelegateFlowLayout {
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
     }
+    
 }
 
+extension GameSelectionViewController {
+    
+    private func segueToGameInfo(_ selectedIndex: Int) {
+        self.selectedIndex = selectedIndex
+        self.performSegue(withIdentifier: "gameInfoSegue", sender: selectedIndex)
+    }
+    
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let destination = segue.destination
+        
+        if let gameInfo = destination as? GameInfoViewController, let selectedIndex = sender as? Int {
+            
+            let game = gameInfoArray[selectedIndex]
+        }
+    }
+    
+}
 

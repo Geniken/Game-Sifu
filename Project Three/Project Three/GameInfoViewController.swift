@@ -11,18 +11,36 @@ import UIKit
 
 class GameInfoViewController: UIViewController {
     
+    @IBOutlet weak var gameTitle: UILabel!
+    @IBOutlet weak var gameImage: UIImageView!
     
+    var game: GameInfo!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard game != nil else {
+            print("Game not properly set")
+            self.dismiss()
+            return
+        }
+        
+        setGameInfo()
     }
 
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    private func dismiss() {
+        self.navigationController?.popViewController(animated: true)
     }
+    
+    func setGameInfo() {
+        
+        gameTitle.text = game.name
+        gameImage.image = game.image
+        
+    }
+    
+    
+    
 }
 
 
