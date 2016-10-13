@@ -7,13 +7,9 @@ target 'Project Three' do
 	pod 'SwiftGifOrigin', :git => 'https://github.com/bahlo/SwiftGif', :tag => ‘v1.6’
 
 	pod ‘SideMenu’
+    
+       pod 'Parse'
+    
 
-	pod ‘Firebase/Core’
-    
-    pod 'Firebase/Database'
-    
-    pod 'Parse'
-    
-    pod ‘NVActivityIndicatorView’, ‘~> 3.0’
     
 end

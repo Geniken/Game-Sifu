@@ -51,16 +51,19 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         
     }
     
-    @IBAction func imageButtonPressed(_ sender: UIButton) {
+    @IBAction func imageButtonPressed(_ sender: AnyObject) {
         
         let picker = UIImagePickerController()
         
         picker.delegate = self
-        picker.sourceType = .camera
+        picker.sourceType = UIImagePickerControllerSourceType.camera
+        
+        picker.allowsEditing = false
         
         present(picker, animated: true, completion: nil)
         
     }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
@@ -71,6 +74,7 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         if let gameImage = image {
             guard let imageData = UIImagePNGRepresentation(gameImage) else { return nil }
             let imageFile = PFFile(name:"image.png", data:imageData)
+            
             return imageFile
         } else {
             return nil
@@ -92,9 +96,9 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         game.saveInBackground { (suceeded, error) in
             
             if error != nil {
-                print ("error")
+                print ("failed")
             } else {
-                print ("saved")
+                print ("success")
             }
         }
     }
@@ -103,3 +107,27 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         super.didReceiveMemoryWarning()
     }
 }
+
+//
+//
+//extension UIImage {
+//
+//    enum JPEGQuality: CGFloat {
+//
+//        case lowest = 0
+//        case low = 0.25
+//        case medium = 0.5
+//        case high = 0.75
+//        case max = 1
+//
+//        var pngData:Data? {return UIImagePNGRepresentation(UIImage)
+//        }
+//        func jpegData(_ quality:JPEGQuality) -> Data {
+//            return UIImageJPEGRepresentation(UIImage, quality.rawValue)
+//        }
+//
+//        if let imageData = image.jpegData(.lowest) {
+//            print (imageData.count)
+//        }
+//    }
+//}

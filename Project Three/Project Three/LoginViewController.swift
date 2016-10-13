@@ -24,8 +24,19 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        query()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddItemViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    func checkSignIn () {
+        
+        query()
         
         print("current User: \(PFUser.current())")
         
@@ -97,5 +108,5 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
         super.didReceiveMemoryWarning()
         
     }
-    
 }
+

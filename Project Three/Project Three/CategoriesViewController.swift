@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import NVActivityIndicatorView
+
 
 class CategoriesViewController: UITableViewController {
     
@@ -21,6 +21,7 @@ class CategoriesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         
         gifs()
 

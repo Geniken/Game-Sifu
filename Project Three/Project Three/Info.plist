@@ -42,9 +42,9 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>allow the messenger to access your photos</string>
+	<string>$(PRODUCT_NAME) photo use</string>
 	<key>NSCameraUsageDescription</key>
-	<string>allow the messenger to access your camera</string>
+	<string>$(PRODUCT_NAME) camera use</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

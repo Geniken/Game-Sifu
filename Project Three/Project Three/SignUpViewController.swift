@@ -12,7 +12,7 @@ import Parse
 
 class SignUpViewController: UIViewController {
     
-
+    
     @IBOutlet weak var signUpUsername: UITextField!
     
     @IBOutlet weak var signUpEmailAddress: UITextField!
@@ -20,15 +20,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpPassword: UITextField!
     
     @IBOutlet weak var signUpPasswordConfirmation: UITextField!
-    
-    
-
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     
     @IBAction func signUpUser(_ sender: UIButton) {
         signUpNewUser()
@@ -59,4 +50,18 @@ class SignUpViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddItemViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
 }
+
