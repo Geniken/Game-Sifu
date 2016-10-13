@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -610,67 +609,56 @@
         <!--Game Selection-->
         <scene sceneID="mxL-Dw-ZfV">
             <objects>
-                <collectionViewController id="VOM-Op-CVe" userLabel="Game Selection" customClass="GameSelectionViewController" sceneMemberID="viewController">
+                <collectionViewController id="VOM-Op-CVe" userLabel="Game Selection" customClass="GameSelectionViewController" customModule="Project_Three" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dAh-KC-kZO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z7x-h7-YxF">
-                            <size key="itemSize" width="315" height="265"/>
+                            <size key="itemSize" width="129" height="101"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectioncell" id="tbE-rM-zYl">
-                                <rect key="frame" x="30" y="0.0" width="315" height="265"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectioncell" id="tbE-rM-zYl" customClass="GamesSelectionCollectionViewCell" customModule="Project_Three" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="315" height="265"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="129" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7r-tN-w0d">
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7r-tN-w0d">
+                                            <frame key="frameInset" minX="8" minY="8" width="121" height="93"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-cV-c5H" userLabel="Game Image"/>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-lQ-hth" userLabel="GameName View">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-cV-c5H" userLabel="Game Image">
+                                                    <frame key="frameInset" minX="8" minY="8" width="105" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-lQ-hth" userLabel="GameName View">
+                                                    <frame key="frameInset" width="101" height="25.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vly-iy-WbV">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vly-iy-WbV">
+                                                            <frame key="frameInset" minX="8" minY="3" width="93" height="19.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstItem="vly-iy-WbV" firstAttribute="top" secondItem="gbV-lQ-hth" secondAttribute="top" constant="3" id="3Gs-pq-5WP"/>
-                                                        <constraint firstAttribute="trailing" secondItem="vly-iy-WbV" secondAttribute="trailing" id="Kx3-MY-OaN"/>
-                                                        <constraint firstItem="vly-iy-WbV" firstAttribute="centerY" secondItem="gbV-lQ-hth" secondAttribute="centerY" id="itG-Ap-vbL"/>
-                                                        <constraint firstItem="vly-iy-WbV" firstAttribute="leading" secondItem="gbV-lQ-hth" secondAttribute="leadingMargin" id="yfh-Dp-Wmf"/>
-                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstItem="dwh-cV-c5H" firstAttribute="leading" secondItem="I7r-tN-w0d" secondAttribute="leadingMargin" id="0qd-Cx-FCb"/>
-                                                <constraint firstItem="dwh-cV-c5H" firstAttribute="top" secondItem="I7r-tN-w0d" secondAttribute="topMargin" id="Ajl-g0-Ft8"/>
-                                                <constraint firstItem="gbV-lQ-hth" firstAttribute="top" secondItem="I7r-tN-w0d" secondAttribute="top" id="WEC-pw-1QR"/>
-                                                <constraint firstItem="gbV-lQ-hth" firstAttribute="leading" secondItem="I7r-tN-w0d" secondAttribute="leading" id="f52-lK-msZ"/>
-                                                <constraint firstAttribute="bottom" secondItem="gbV-lQ-hth" secondAttribute="bottom" constant="213" id="f6k-Yv-c0w"/>
-                                                <constraint firstAttribute="trailing" secondItem="gbV-lQ-hth" secondAttribute="trailing" constant="194" id="oxp-rs-Zzj"/>
-                                                <constraint firstItem="dwh-cV-c5H" firstAttribute="trailing" secondItem="I7r-tN-w0d" secondAttribute="trailingMargin" id="uaE-HU-Tx6"/>
-                                                <constraint firstItem="dwh-cV-c5H" firstAttribute="bottom" secondItem="I7r-tN-w0d" secondAttribute="bottomMargin" id="uaf-yS-OQy"/>
-                                            </constraints>
                                         </view>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="I7r-tN-w0d" firstAttribute="leading" secondItem="tbE-rM-zYl" secondAttribute="leadingMargin" id="EMo-Wq-vLD"/>
-                                    <constraint firstItem="I7r-tN-w0d" firstAttribute="bottom" secondItem="tbE-rM-zYl" secondAttribute="bottomMargin" id="QdN-zC-HWN"/>
-                                    <constraint firstItem="I7r-tN-w0d" firstAttribute="top" secondItem="tbE-rM-zYl" secondAttribute="topMargin" id="UDm-Zl-alc"/>
-                                    <constraint firstItem="I7r-tN-w0d" firstAttribute="trailing" secondItem="tbE-rM-zYl" secondAttribute="trailingMargin" id="jfb-4x-YYB"/>
-                                </constraints>
                                 <connections>
+                                    <outlet property="gameImage" destination="dwh-cV-c5H" id="ZJi-6r-Udt"/>
+                                    <outlet property="gameName" destination="vly-iy-WbV" id="VLl-pb-b92"/>
                                     <segue destination="MDn-4N-dma" kind="show" id="Mgk-0y-Sjh"/>
                                 </connections>
                             </collectionViewCell>
@@ -969,7 +957,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-vl-bIp">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-vl-bIp">
                                 <frame key="frameInset" minY="382" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1304,6 +1292,6 @@
         <image name="twitpic_camera_icon" width="500" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ogG-Ht-WJ2"/>
+        <segue reference="lQE-jE-eO8"/>
     </inferredMetricsTieBreakers>
 </document>

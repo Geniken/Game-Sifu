@@ -19,7 +19,7 @@
 		8B6BD8B21DA824BA0099DE1E /* Nintendo64.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B11DA824BA0099DE1E /* Nintendo64.gif */; };
 		8B6BD8B61DA82EC60099DE1E /* Playstation2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */; };
 		8B6BD8B81DA834560099DE1E /* Playstation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B71DA834560099DE1E /* Playstation1.gif */; };
-		8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */; };
+		8B6BD8BA1DA85FBD0099DE1E /* GamesSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B91DA85FBD0099DE1E /* GamesSelectionCollectionViewCell.swift */; };
 		8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070241DA3334F007798D6 /* AppDelegate.swift */; };
 		8BB070271DA3334F007798D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070261DA3334F007798D6 /* ViewController.swift */; };
 		8BB0702A1DA3334F007798D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB070281DA3334F007798D6 /* Main.storyboard */; };
@@ -54,7 +54,7 @@
 		8B6BD8B11DA824BA0099DE1E /* Nintendo64.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nintendo64.gif; sourceTree = "<group>"; };
 		8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation2.gif; sourceTree = "<group>"; };
 		8B6BD8B71DA834560099DE1E /* Playstation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation1.gif; sourceTree = "<group>"; };
-		8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableViewCell.swift; sourceTree = "<group>"; };
+		8B6BD8B91DA85FBD0099DE1E /* GamesSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		8BB070211DA3334F007798D6 /* Project Three.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Three.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB070241DA3334F007798D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BB070261DA3334F007798D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */,
 				8B6BD8AF1DA820FF0099DE1E /* PlaystationTableViewController.swift */,
 				8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */,
-				8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */,
+				8B6BD8B91DA85FBD0099DE1E /* GamesSelectionCollectionViewCell.swift */,
 				8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */,
 				8BB276751DAC393A00553A20 /* AddItemViewController.swift */,
 			);
@@ -334,7 +334,7 @@
 				8BB0703A1DA33399007798D6 /* Description.swift in Sources */,
 				8BB276761DAC393A00553A20 /* AddItemViewController.swift in Sources */,
 				8BB070271DA3334F007798D6 /* ViewController.swift in Sources */,
-				8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */,
+				8B6BD8BA1DA85FBD0099DE1E /* GamesSelectionCollectionViewCell.swift in Sources */,
 				8B6BD8AE1DA820EB0099DE1E /* NintendoTableViewController.swift in Sources */,
 				8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */,
 				8B6BD8B01DA820FF0099DE1E /* PlaystationTableViewController.swift in Sources */,

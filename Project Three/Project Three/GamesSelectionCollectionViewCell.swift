@@ -9,13 +9,10 @@
 import Foundation
 import UIKit
 
-class GamesListTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var gameImage: UIImageView!
+class GamesSelectionCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var gameName: UILabel!
     
-    
-    
+    @IBOutlet weak var gameImage: UIImageView!
     
 }

@@ -61,14 +61,12 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
         
         PFUser.logInWithUsername(inBackground: userNameField, password: password) { (user, error) in
             
-            print(error)
-            print(user)
+            
             
             if error != nil {
                 
                 self.performSegue(withIdentifier: "signIn", sender: self)
                 print("Yay you logged in")
-                print(user)
                 
             } else {
                 
@@ -86,7 +84,7 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
             guard let objects = objects else { return }
             
             for object in objects {
-                print(object)
+             
             }
             
         })

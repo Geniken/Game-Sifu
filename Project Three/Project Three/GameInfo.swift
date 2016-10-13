@@ -9,13 +9,16 @@
 import Foundation
 
 struct GameInfo {
+    
     let name:String
-    let image:URL
-    let ratings: Double
-    let reviews: [String]
-    let similarGames: [URL]
-    let description: String
+    let image: AnyObject?
+    let ratings: Double?
+    let reviews: [String]?
+    let similarGames: [URL]?
     let cost: Double
+    let console: String
+    let quantity: Int
+
 }
 
 

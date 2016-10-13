@@ -73,24 +73,24 @@ class GamesListViewController: UITableViewController {
     
     
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? GamesListTableViewCell else { return UITableViewCell() }
-        
-//        let gameInfo = gameInfoArray[indexPath.row]
-
-      
-//        cell.gameName.text = gameInfo.title as! String
-        
-        return cell
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//    
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 10
+//    }
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        
+//      //  guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? GamesListTableViewCell else { return UITableViewCell() }
+//        
+////        let gameInfo = gameInfoArray[indexPath.row]
+//
+//      
+////        cell.gameName.text = gameInfo.title as! String
+//        
+// //       return cell
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
