@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct GameInfo {
     
     let name:String
-    let image: AnyObject?
+    let image: UIImage?
     let ratings: Double?
     let reviews: [String]?
     let similarGames: [URL]?

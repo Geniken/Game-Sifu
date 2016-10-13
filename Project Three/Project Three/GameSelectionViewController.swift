@@ -21,6 +21,7 @@ class GameSelectionViewController: UICollectionViewController {
     }
     
     var gameInfoArray: [GameInfo] = []
+
     
     func queryParse() {
         
@@ -38,55 +39,46 @@ class GameSelectionViewController: UICollectionViewController {
                 guard let name = object["gameName"] as? String else { print("nil name found"); return }
                 guard let cost = object["gamePrice"] as? String else { print("nil cost found") ; return }
                 guard let console = object["gameConsole"] as? String else { print("nil console found");return }
-                guard let quantity = object["gameQuantity"] as? String else { print("nil quanity found") ; return}
+                guard let quantity = object["gameQuantity"] as? String else { print("nil quanity found") ; return }
+                let image = object["picture"] as! PFFile
                 
-                let game = GameInfo(name: name, image: nil, ratings: nil, reviews: nil, similarGames: nil, cost: cost, console: console, quantity: quantity)
-                print("GAME: \(game)")
-                self.gameInfoArray.append(game)
+                image.getDataInBackground(block: { (imageData, error) in
+                    
+                    // convert imageData to UIImage
+                    
+                    guard error == nil else { print("error returning imageData: \(imageData)"); return }
+                    guard let imageData = imageData else { return }
+                    let convertedImage = UIImage(data: imageData)
+                    
+                    // greate single game item
+                    
+                    let game = GameInfo(name: name, image: convertedImage, ratings: nil, reviews: nil, similarGames: nil, cost: cost, console: console, quantity: quantity)
+                    
+                    //append your gameInfoArray
+                   
+                    self.gameInfoArray.append(game)
+                    
+                })
                 
-                print(self.gameInfoArray.count)
             }
             
-            self.collectionView?.reloadData()
-           
+            
+            DispatchQueue.main.async {
+                self.collectionView?.reloadData()
+                
+            }
+            
         })
-        
-        
-//        var imageQuery = PFQuery(className:"GameInformation")
-//        
-//        imageQuery.findObjectsInBackground(block: { (objects, error) in
-//            
-//            guard error == nil else { print("error finding objects: \(error)") ; return }
-//            guard let objects = objects else { return }
-//            
-//            for object in objects {
-//                
-//                let userImageFile = anotherPhoto["imageFile"] as PFFile
-//                userImageFile.getDataInBackgroundWithBlock {
-//                    (imageData: NSData?, error: NSError?) -> Void in
-//                    if error == nil {
-//                        if let imageData = imageData {
-//                            let image = UIImage(data:imageData)
-//                        }
-//                    }
-//                }
-//                
-//                guard let image = object["picture"] as? PFFile else { return }
-//                
-//                let game = GameInfo(name: name, image: image, ratings: nil, reviews: nil, similarGames: nil, cost: cost)
-//                
-//                print("objets returned from query: \(object)")
-//            }
-//            
-//        })
-
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    
 }
+
+
+
+
+
 
 extension GameSelectionViewController {
     
@@ -104,6 +96,8 @@ extension GameSelectionViewController {
         let parseData = self.gameInfoArray[indexPath.row]
         
         cell.gameName.text = parseData.name
+        cell.gameImage.image = parseData.image
+        print(parseData.image)
         
         return cell
     }
