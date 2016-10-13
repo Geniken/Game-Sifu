@@ -15,9 +15,9 @@ struct GameInfo {
     let ratings: Double?
     let reviews: [String]?
     let similarGames: [URL]?
-    let cost: Double
+    let cost: String
     let console: String
-    let quantity: Int
+    let quantity: String
 
 }
 

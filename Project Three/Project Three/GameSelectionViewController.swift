@@ -35,19 +35,20 @@ class GameSelectionViewController: UICollectionViewController {
             
             for object in objects {
                 
-                guard let name = object["gameName"] as? String else { return }
-                print(name)
-                guard let cost = object["gamePrice"] as? Double else { return }
-                print(cost)
-                guard let console = object["gameConsole"] as? String else { return }
-                guard let quantity = object["gameQuantity"] as? Int else {return}
+                guard let name = object["gameName"] as? String else { print("nil name found"); return }
+                guard let cost = object["gamePrice"] as? String else { print("nil cost found") ; return }
+                guard let console = object["gameConsole"] as? String else { print("nil console found");return }
+                guard let quantity = object["gameQuantity"] as? String else { print("nil quanity found") ; return}
                 
                 let game = GameInfo(name: name, image: nil, ratings: nil, reviews: nil, similarGames: nil, cost: cost, console: console, quantity: quantity)
-                
+                print("GAME: \(game)")
                 self.gameInfoArray.append(game)
                 
+                print(self.gameInfoArray.count)
             }
             
+            self.collectionView?.reloadData()
+           
         })
         
         
@@ -94,13 +95,15 @@ extension GameSelectionViewController {
         return 1
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return gameInfoArray.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectioncell", for: indexPath) as! GamesSelectionCollectionViewCell
         
+        let parseData = self.gameInfoArray[indexPath.row]
         
+        cell.gameName.text = parseData.name
         
         return cell
     }
