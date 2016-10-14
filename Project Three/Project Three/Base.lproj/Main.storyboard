@@ -711,16 +711,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tql-Zn-Bv1">
-                                <frame key="frameInset" minX="16" minY="90" width="343" height="222"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-7B-Fvu">
-                                        <frame key="frameInset" minX="8" minY="8" width="327" height="206"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-7B-Fvu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="0xG-VK-Son"/>
+                                    <constraint firstAttribute="width" constant="375" id="wuh-6b-cak"/>
+                                </constraints>
+                            </imageView>
+                            <view clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tql-Zn-Bv1">
+                                <color key="backgroundColor" red="0.15228365390000001" green="0.15228365390000001" blue="0.15228365390000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Ratings, Reviews ,etc" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-cD-IzP">
                                 <frame key="frameInset" minX="16" minY="332" width="343" height="217"/>
@@ -737,21 +735,34 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XOK-7B-Fvu" firstAttribute="top" secondItem="qLt-Q2-5Bh" secondAttribute="bottom" id="2JK-qT-JgF"/>
+                            <constraint firstItem="Tql-Zn-Bv1" firstAttribute="height" secondItem="XOK-7B-Fvu" secondAttribute="height" id="5nD-XA-Kte"/>
+                            <constraint firstItem="XOK-7B-Fvu" firstAttribute="leading" secondItem="GEF-mY-q37" secondAttribute="leading" id="T57-xm-JF7"/>
+                            <constraint firstItem="Tql-Zn-Bv1" firstAttribute="centerX" secondItem="XOK-7B-Fvu" secondAttribute="centerX" id="YUn-5A-f3f"/>
+                            <constraint firstItem="Tql-Zn-Bv1" firstAttribute="width" secondItem="XOK-7B-Fvu" secondAttribute="width" id="fRm-9z-rBL"/>
+                            <constraint firstItem="Tql-Zn-Bv1" firstAttribute="centerY" secondItem="XOK-7B-Fvu" secondAttribute="centerY" id="uCm-wm-Cxz"/>
+                            <constraint firstAttribute="trailing" secondItem="XOK-7B-Fvu" secondAttribute="trailing" id="vL2-N1-XL2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Xv-W3-LTq">
                         <view key="titleView" contentMode="scaleToFill" id="ndI-9E-kCm">
                             <rect key="frame" x="113" y="6" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xO-sU-LCK">
-                                    <frame key="frameInset" minX="34" minY="6" width="83" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xO-sU-LCK">
                                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
                                     <color key="textColor" red="1" green="0.96217167044566254" blue="0.99287996283965263" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="3xO-sU-LCK" firstAttribute="centerY" secondItem="ndI-9E-kCm" secondAttribute="centerY" id="90f-IG-yzH"/>
+                                <constraint firstItem="3xO-sU-LCK" firstAttribute="leading" secondItem="ndI-9E-kCm" secondAttribute="leading" constant="34" id="Y7a-65-yRL"/>
+                                <constraint firstItem="3xO-sU-LCK" firstAttribute="top" secondItem="ndI-9E-kCm" secondAttribute="top" constant="6" id="a7n-IG-uie"/>
+                                <constraint firstItem="3xO-sU-LCK" firstAttribute="centerX" secondItem="ndI-9E-kCm" secondAttribute="centerX" id="y97-yJ-dge"/>
+                            </constraints>
                         </view>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ux5-vg-xSl">
                             <color key="tintColor" red="1" green="0.96217167039999996" blue="0.99287996280000002" alpha="1" colorSpace="calibratedRGB"/>

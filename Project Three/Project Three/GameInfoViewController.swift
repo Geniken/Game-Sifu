@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+
+var imageNow: UIImage?
+
 class GameInfoViewController: UIViewController {
     
     @IBOutlet weak var gameTitle: UILabel!
@@ -25,7 +28,9 @@ class GameInfoViewController: UIViewController {
 //            return
 //        }
         
-        setGameInfo()
+        //setGameInfo()
+        gameImage.image = imageNow
+        
     }
 
 //    private func dismiss() {

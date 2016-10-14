@@ -26,7 +26,7 @@ class GameSelectionViewController: UICollectionViewController {
     
     func queryParse() {
         
-        var query = PFQuery(className:"GameInformation")
+        let query = PFQuery(className:"GameInformation")
         
         query.findObjectsInBackground(block: { (objects, error) in
             
@@ -65,21 +65,12 @@ class GameSelectionViewController: UICollectionViewController {
         
     }
     
+    //    func segueToGameInfo() {
+    //        //self.selectedIndex = selectedIndex
+    //        self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
+    //    }
     
-    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if let destination = segue.destination as? GameInfoViewController {
-            
-            destination.gameImage.image = gameInfoArray[6].image
-            
-            
-        }
-    }
     
-    func segueToGameInfo(_ selectedIndex: Int) {
-        self.selectedIndex = selectedIndex
-        self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
-    }
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -101,49 +92,50 @@ class GameSelectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let row = (indexPath as NSIndexPath).row
+        let row = indexPath.row
         
         guard row >= 0 && row < gameInfoArray.count else { return }
         
-        self.segueToGameInfo(row)
+        imageNow = gameInfoArray[row].image
         
+        self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
     }
     
     
 }
-    
-    fileprivate let itemsPerRow: CGFloat = 2
-    
-    fileprivate let sectionInsets = UIEdgeInsets(top: 100.0, left: 40.0, bottom: 100.0, right: 40.0)
-    
+
+fileprivate let itemsPerRow: CGFloat = 2
+
+fileprivate let sectionInsets = UIEdgeInsets(top: 100.0, left: 40.0, bottom: 100.0, right: 40.0)
+
 extension GameSelectionViewController : UICollectionViewDelegateFlowLayout {
     
     //1
-        func collectionView(_ collectionView: UICollectionView,
-                            layout collectionViewLayout: UICollectionViewLayout,
-                            sizeForItemAt indexPath: IndexPath) -> CGSize {
-            //2
-            
-            let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-            let availableWidth = view.frame.width - paddingSpace
-            let widthPerItem = availableWidth /   itemsPerRow
-            
-            return CGSize(width: widthPerItem, height: widthPerItem)
-        }
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //2
         
-        //3
-        func collectionView(_ collectionView: UICollectionView,
-                            layout collectionViewLayout: UICollectionViewLayout,
-                            insetForSectionAt section: Int) -> UIEdgeInsets {
-            return sectionInsets
-        }
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth /   itemsPerRow
         
-        // 4
-        func collectionView(_ collectionView: UICollectionView,
-                            layout collectionViewLayout: UICollectionViewLayout,
-                            minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return sectionInsets.left
-        }
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    //3
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    
+    // 4
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return sectionInsets.left
+    }
     
 }
 
@@ -164,9 +156,9 @@ extension GameSelectionViewController : UICollectionViewDelegateFlowLayout {
 //        }
 
 //        if let gameInfoVC = destination as? GameInfoViewController, let selectedIndex = sender as? Int {
-//            
+//
 //            let game = gameInfoArray[selectedIndex]
-//            
+//
 //        }
 
 
