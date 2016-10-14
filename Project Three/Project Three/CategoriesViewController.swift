@@ -17,12 +17,16 @@ class CategoriesViewController: UITableViewController {
     
     @IBOutlet weak var segaGif: UIImageView!
     
+    @IBOutlet weak var searchButton: UIBarButtonItem!
+    
+    @IBOutlet weak var searchTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         gifs()
-
+        
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
@@ -48,5 +52,13 @@ class CategoriesViewController: UITableViewController {
         
         
     }
+    
+    @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
+        
+        guard let text: String = searchTextField.text else { return }
+        
+        keyForSearch = text
+        
+    }
+    
 }
-

@@ -156,7 +156,7 @@
         <scene sceneID="M14-Bf-igc">
             <objects>
                 <tableViewController title="Categories" id="82k-PQ-lKh" customClass="CategoriesViewController" customModule="Project_Three" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="179" sectionHeaderHeight="28" sectionFooterHeight="28" id="ub7-aP-xZP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="179" sectionHeaderHeight="28" sectionFooterHeight="28" id="ub7-aP-xZP" userLabel="Console Categories">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -190,12 +190,6 @@
                                                         <constraint firstAttribute="trailing" secondItem="WBg-x9-H6t" secondAttribute="trailing" constant="8" id="tQd-Ur-BQM"/>
                                                     </constraints>
                                                 </view>
-                                                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQa-cs-isn">
-                                                    <frame key="frameInset" minX="-2" minY="3" height="44" maxX="1"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                    <color key="barTintColor" red="0.59705379012199145" green="0.58613232105420343" blue="0.63402083333333326" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </searchBar>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -274,7 +268,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="w91-jM-tOY">
                         <view key="titleView" contentMode="scaleToFill" id="Stp-l5-dea">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
+                            <rect key="frame" x="38" y="6" width="286" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIf-ND-1Te">
@@ -284,13 +278,28 @@
                                     <color key="textColor" red="1" green="0.98730889310000003" blue="0.96183501940000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPQ-aS-Jq8">
+                                    <frame key="frameInset" minY="1" width="228" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="hKu-R2-x5r">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="searchButtonPressed:" destination="82k-PQ-lKh" id="T5I-lB-mku"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nintendoGif" destination="WBg-x9-H6t" id="FZP-9a-hzh"/>
                         <outlet property="playstationGif" destination="r1o-v7-9zr" id="JFx-nR-aNQ"/>
+                        <outlet property="searchButton" destination="hKu-R2-x5r" id="ESz-mn-cG1"/>
+                        <outlet property="searchTextField" destination="JPQ-aS-Jq8" id="Hzo-CE-9OP"/>
                         <outlet property="segaGif" destination="Mc4-GX-KxB" id="c5S-ZY-EFA"/>
                     </connections>
                 </tableViewController>
@@ -563,7 +572,7 @@
                                                             <frame key="frameInset" width="359" height="272"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <connections>
-                                                                <segue destination="VOM-Op-CVe" kind="show" id="JtA-Qk-Fdx"/>
+                                                                <segue destination="VOM-Op-CVe" kind="show" identifier="gameSelectionSegue" id="JtA-Qk-Fdx"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -717,11 +726,11 @@
                                     <constraint firstAttribute="width" constant="375" id="wuh-6b-cak"/>
                                 </constraints>
                             </imageView>
-                            <view clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tql-Zn-Bv1">
+                            <view clipsSubviews="YES" alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tql-Zn-Bv1">
                                 <color key="backgroundColor" red="0.15228365390000001" green="0.15228365390000001" blue="0.15228365390000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Ratings, Reviews ,etc" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-cD-IzP">
-                                <frame key="frameInset" minX="16" minY="332" width="343" height="217"/>
+                                <frame key="frameInset" minX="16" minY="431" width="343" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="0.9616448401657689" blue="0.94644291110313483" alpha="1" colorSpace="calibratedRGB"/>
@@ -733,6 +742,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add to Cart"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEp-H1-xeK">
+                                <frame key="frameInset" minY="323" width="227" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CostLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hk-X9-3pN">
+                                <frame key="frameInset" minX="286" minY="338" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -772,7 +795,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="costLabel" destination="8hk-X9-3pN" id="3NJ-Sk-ujc"/>
                         <outlet property="gameImage" destination="XOK-7B-Fvu" id="oop-hh-nes"/>
+                        <outlet property="gameLabel" destination="ZEp-H1-xeK" id="bPs-fU-b8a"/>
                         <outlet property="gameTitle" destination="3xO-sU-LCK" id="tqG-C4-Mg3"/>
                     </connections>
                 </viewController>
@@ -1307,6 +1332,6 @@
         <image name="twitpic_camera_icon" width="500" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lQE-jE-eO8"/>
+        <segue reference="JtA-Qk-Fdx"/>
     </inferredMetricsTieBreakers>
 </document>

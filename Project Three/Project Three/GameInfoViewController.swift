@@ -11,36 +11,22 @@ import UIKit
 
 
 var imageNow: UIImage?
+var textNow: String?
+var costNow: String?
 
 class GameInfoViewController: UIViewController {
     
     @IBOutlet weak var gameTitle: UILabel!
     @IBOutlet weak var gameImage: UIImageView!
+    @IBOutlet weak var gameLabel: UILabel!
+    @IBOutlet weak var costLabel: UILabel!
     
-    var game: GameInfo!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        guard game != nil else {
-//            print("Game not properly set")
-//            self.dismiss()
-//            return
-//        }
-        
-        //setGameInfo()
         gameImage.image = imageNow
-        
-    }
-
-//    private func dismiss() {
-//        self.navigationController?.popViewController(animated: true)
-//    }
-    
-    func setGameInfo() {
-        
-        //gameTitle.text = game.name
-        //gameImage.image = game.image
+        gameLabel.text = textNow
         
     }
     

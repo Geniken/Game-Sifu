@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Parse
 
+var keyForSearch: String!
 
 class GameSelectionViewController: UICollectionViewController {
     
@@ -18,6 +19,7 @@ class GameSelectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         queryParse()
+        
     }
     
     var selectedIndex: Int?
@@ -26,9 +28,15 @@ class GameSelectionViewController: UICollectionViewController {
     
     func queryParse() {
         
-        let query = PFQuery(className:"GameInformation")
+        //guard keyForSearch != nil else { print("unwrapping of keyForSearch returned \(keyForSearch)"); return }
+        
+        let query = PFQuery(className: "GameInformation")
+        
+        //query.whereKey("gameName", equalTo: "\(keyForSearch)")
         
         query.findObjectsInBackground(block: { (objects, error) in
+            
+            
             
             guard error == nil else { print("error finding objects: \(error)") ; return }
             guard let objects = objects else { return }
@@ -65,12 +73,6 @@ class GameSelectionViewController: UICollectionViewController {
         
     }
     
-    //    func segueToGameInfo() {
-    //        //self.selectedIndex = selectedIndex
-    //        self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
-    //    }
-    
-    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -97,6 +99,8 @@ class GameSelectionViewController: UICollectionViewController {
         guard row >= 0 && row < gameInfoArray.count else { return }
         
         imageNow = gameInfoArray[row].image
+        textNow = gameInfoArray[row].name
+        
         
         self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
     }
@@ -139,27 +143,7 @@ extension GameSelectionViewController : UICollectionViewDelegateFlowLayout {
     
 }
 
-//extension GameSelectionViewController {
-//
-//    func segueToGameInfo(_ selectedIndex: Int) {
-//        self.selectedIndex = selectedIndex
-//        self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
-//    }
-//
-//    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-//
-//        if let destination = segue.destination as? GameInfoViewController {
-//
-//            destination.gameImage.image = gameInfoArray[6].image
-//
-//
-//        }
 
-//        if let gameInfoVC = destination as? GameInfoViewController, let selectedIndex = sender as? Int {
-//
-//            let game = gameInfoArray[selectedIndex]
-//
-//        }
 
 
 
