@@ -9,10 +9,4 @@
 import Foundation
 import UIKit
 
-class GamesListTableCell: UITableViewCell {
-    
-    @IBOutlet weak var titleLabel: UILabel!
 
-    
-    
-}
