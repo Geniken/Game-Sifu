@@ -50,9 +50,5 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>3Dventure.ttf</string>
-	</array>
 </dict>
 </plist>

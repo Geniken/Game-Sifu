@@ -20,6 +20,9 @@
 		8B6BD8B61DA82EC60099DE1E /* Playstation2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */; };
 		8B6BD8B81DA834560099DE1E /* Playstation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B71DA834560099DE1E /* Playstation1.gif */; };
 		8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */; };
+		8B8618061DB09D3300B355B5 /* GameInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */; };
+		8B8618081DB09F1B00B355B5 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */; };
+		8B8706411DB0120600896FE8 /* GameSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */; };
 		8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070241DA3334F007798D6 /* AppDelegate.swift */; };
 		8BB070271DA3334F007798D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070261DA3334F007798D6 /* ViewController.swift */; };
 		8BB0702A1DA3334F007798D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB070281DA3334F007798D6 /* Main.storyboard */; };
@@ -55,6 +58,9 @@
 		8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation2.gif; sourceTree = "<group>"; };
 		8B6BD8B71DA834560099DE1E /* Playstation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation1.gif; sourceTree = "<group>"; };
 		8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableViewCell.swift; sourceTree = "<group>"; };
+		8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInformationViewController.swift; sourceTree = "<group>"; };
+		8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
+		8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		8BB070211DA3334F007798D6 /* Project Three.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Three.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB070241DA3334F007798D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BB070261DA3334F007798D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B8618041DB09C8B00B355B5 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				8B6BD8A11DA81C6F0099DE1E /* GamesListViewController.swift */,
+				8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */,
+			);
+			name = Old;
+			sourceTree = "<group>";
+		};
 		8BB070181DA3334F007798D6 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +153,7 @@
 				8BB0703E1DA333A8007798D6 /* Model */,
 				8BCD13121DA6C22800185AB3 /* View Controllers */,
 				8BC6369B1DA73934008CAF3C /* Gif */,
+				8B8618041DB09C8B00B355B5 /* Old */,
 			);
 			path = "Project Three";
 			sourceTree = "<group>";
@@ -161,6 +177,11 @@
 			isa = PBXGroup;
 			children = (
 				8BB070241DA3334F007798D6 /* AppDelegate.swift */,
+				8BB070261DA3334F007798D6 /* ViewController.swift */,
+				8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */,
+				8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */,
+				8B6BD8AF1DA820FF0099DE1E /* PlaystationTableViewController.swift */,
+				8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -183,17 +204,13 @@
 		8BCD13121DA6C22800185AB3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B6BD8A11DA81C6F0099DE1E /* GamesListViewController.swift */,
-				8BB070261DA3334F007798D6 /* ViewController.swift */,
 				8BCD12E01DA5BF7300185AB3 /* LoginViewController.swift */,
-				8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */,
-				8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */,
-				8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */,
-				8B6BD8AF1DA820FF0099DE1E /* PlaystationTableViewController.swift */,
 				8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */,
-				8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */,
+				8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */,
 				8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */,
 				8BB276751DAC393A00553A20 /* AddItemViewController.swift */,
+				8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */,
+				8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -334,6 +351,7 @@
 				8BB0703A1DA33399007798D6 /* Description.swift in Sources */,
 				8BB276761DAC393A00553A20 /* AddItemViewController.swift in Sources */,
 				8BB070271DA3334F007798D6 /* ViewController.swift in Sources */,
+				8B8618061DB09D3300B355B5 /* GameInformationViewController.swift in Sources */,
 				8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */,
 				8B6BD8AE1DA820EB0099DE1E /* NintendoTableViewController.swift in Sources */,
 				8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */,
@@ -346,8 +364,10 @@
 				8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */,
 				8B6BD8A21DA81C6F0099DE1E /* GamesListViewController.swift in Sources */,
 				8BC5C8691DAD72C0006BBA63 /* SignUpViewController.swift in Sources */,
+				8B8706411DB0120600896FE8 /* GameSelectionCollectionViewCell.swift in Sources */,
 				8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */,
 				8BCD12E11DA5BF7300185AB3 /* LoginViewController.swift in Sources */,
+				8B8618081DB09F1B00B355B5 /* CheckoutTableViewController.swift in Sources */,
 				8BC5C8671DACACD8006BBA63 /* id key.swift in Sources */,
 				8B6BD89E1DA81C610099DE1E /* GameListCell.swift in Sources */,
 				8BC5C8651DAC99D8006BBA63 /* GameSelectionViewController.swift in Sources */,

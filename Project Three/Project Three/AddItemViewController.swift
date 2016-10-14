@@ -71,15 +71,25 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
     }
     
     func convertToPFFile(image: UIImage?) -> PFFile? {
-        if let gameImage = image {
-            guard let imageData = UIImagePNGRepresentation(gameImage) else { return nil }
-            let imageFile = PFFile(name:"image.png", data:imageData)
-            
-            return imageFile
-        } else {
-            return nil
-        }
+        
+        guard let image = image else { print("nil iamge") ; return nil }
+        guard let imageData = UIImagePNGRepresentation(image) else { print("no data") ; return nil }
+        
+        let imageFile = PFFile(name: "image.png", data: imageData)
+        
+        return imageFile
+        
     }
+    
+//        if let gameImage = image {
+//            guard let imageData = UIImageJPEGRepresentation(gameImage, 1.0) else { return nil }
+//            let imageFile = PFFile(name:"image.jpeg", data:imageData)
+//            
+//            return imageFile
+//        } else {
+//            return nil
+//        }
+    
     
     func registerGame () {
         
@@ -90,14 +100,15 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         game["gamePrice"] = askingPriceText.text
         game["gameQuantity"] = gameQuantityText.text
         game["gameAge"] = gameAgeText.text
-        game["picture"] = convertToPFFile(image: saveImage.image)
+//        game["picture"] = convertToPFFile(image: saveImage.image)
         game["Username"] = gameUsername.text
+       
         
-        game.saveInBackground { (suceeded, error) in
+        game.saveInBackground { (suceeded: Bool, error: Error?) in
+            guard error == nil else { print("error is \(error)") ; return }
             
-            if error != nil {
-                print ("failed")
-            } else {
+            if suceeded {
+                
                 print ("success")
             }
         }
