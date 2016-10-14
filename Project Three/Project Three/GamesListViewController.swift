@@ -28,8 +28,6 @@ class GameSelectionViewController: UICollectionViewController {
         
         var query = PFQuery(className:"GameInformation")
         
-        //query.whereKey("gameName", equalTo:"Mario Kart: Double Dash")
-        
         query.findObjectsInBackground(block: { (objects, error) in
             
             guard error == nil else { print("error finding objects: \(error)") ; return }
@@ -46,27 +44,20 @@ class GameSelectionViewController: UICollectionViewController {
                 
                 image.getDataInBackground(block: { (imageData, error) in
                     
-                    // convert imageData to UIImage
-                    
                     guard error == nil else { print("error returning imageData: \(imageData)"); return }
                     guard let imageData = imageData else { return }
                     let convertedImage = UIImage(data: imageData)
                     
-                    // greate single game item
-                    
                     let game = GameInfo(name: name, image: convertedImage, ratings: nil, reviews: nil, similarGames: nil, cost: cost, console: console, quantity: quantity)
                     
-                    //append your gameInfoArray
-                   
                     self.gameInfoArray.append(game)
                     
+                    DispatchQueue.main.async {
+                        self.collectionView?.reloadData()
+                        
+                    }
+                    
                 })
-                
-            }
-            
-            
-            DispatchQueue.main.async {
-                self.collectionView?.reloadData()
                 
             }
             
@@ -75,16 +66,20 @@ class GameSelectionViewController: UICollectionViewController {
     }
     
     
-}
-
-
-
-
-
-
-extension GameSelectionViewController {
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let destination = segue.destination as? GameInfoViewController {
+            
+            destination.gameImage.image = gameInfoArray[6].image
+            
+            
+        }
+    }
     
-    
+    func segueToGameInfo(_ selectedIndex: Int) {
+        self.selectedIndex = selectedIndex
+        self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
+    }
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -104,59 +99,75 @@ extension GameSelectionViewController {
         return cell
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let row = (indexPath as NSIndexPath).row
+        
+        guard row >= 0 && row < gameInfoArray.count else { return }
+        
+        self.segueToGameInfo(row)
+        
+    }
+    
+    
 }
-
-fileprivate let itemsPerRow: CGFloat = 2
-
-fileprivate let sectionInsets = UIEdgeInsets(top: 100.0, left: 40.0, bottom: 100.0, right: 40.0)
-
+    
+    fileprivate let itemsPerRow: CGFloat = 2
+    
+    fileprivate let sectionInsets = UIEdgeInsets(top: 100.0, left: 40.0, bottom: 100.0, right: 40.0)
+    
 extension GameSelectionViewController : UICollectionViewDelegateFlowLayout {
+    
     //1
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //2
+        func collectionView(_ collectionView: UICollectionView,
+                            layout collectionViewLayout: UICollectionViewLayout,
+                            sizeForItemAt indexPath: IndexPath) -> CGSize {
+            //2
+            
+            let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+            let availableWidth = view.frame.width - paddingSpace
+            let widthPerItem = availableWidth /   itemsPerRow
+            
+            return CGSize(width: widthPerItem, height: widthPerItem)
+        }
         
+        //3
+        func collectionView(_ collectionView: UICollectionView,
+                            layout collectionViewLayout: UICollectionViewLayout,
+                            insetForSectionAt section: Int) -> UIEdgeInsets {
+            return sectionInsets
+        }
         
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-        let availableWidth = view.frame.width - paddingSpace
-        let widthPerItem = availableWidth /   itemsPerRow
-        
-        return CGSize(width: widthPerItem, height: widthPerItem)
-    }
-    
-    //3
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
-        return sectionInsets
-    }
-    
-    // 4
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return sectionInsets.left
-    }
+        // 4
+        func collectionView(_ collectionView: UICollectionView,
+                            layout collectionViewLayout: UICollectionViewLayout,
+                            minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+            return sectionInsets.left
+        }
     
 }
 
-extension GameSelectionViewController {
-    
-    private func segueToGameInfo(_ selectedIndex: Int) {
-        self.selectedIndex = selectedIndex
-        self.performSegue(withIdentifier: "gameInfoSegue", sender: selectedIndex)
-    }
-    
-    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        let destination = segue.destination
-        
-        if let gameInfo = destination as? GameInfoViewController, let selectedIndex = sender as? Int {
-            
-            let game = gameInfoArray[selectedIndex]
-        }
-    }
-    
-}
+//extension GameSelectionViewController {
+//
+//    func segueToGameInfo(_ selectedIndex: Int) {
+//        self.selectedIndex = selectedIndex
+//        self.performSegue(withIdentifier: "gameInfoSegue", sender: self)
+//    }
+//
+//    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+//
+//        if let destination = segue.destination as? GameInfoViewController {
+//
+//            destination.gameImage.image = gameInfoArray[6].image
+//
+//
+//        }
+
+//        if let gameInfoVC = destination as? GameInfoViewController, let selectedIndex = sender as? Int {
+//            
+//            let game = gameInfoArray[selectedIndex]
+//            
+//        }
+
+
 

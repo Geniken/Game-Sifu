@@ -659,7 +659,7 @@
                                 <connections>
                                     <outlet property="gameImage" destination="dwh-cV-c5H" id="ZJi-6r-Udt"/>
                                     <outlet property="gameName" destination="vly-iy-WbV" id="VLl-pb-b92"/>
-                                    <segue destination="MDn-4N-dma" kind="show" identifier="gameInfoSegue" id="Mgk-0y-Sjh"/>
+                                    <segue destination="MDn-4N-dma" kind="show" identifier="gameInfoSegue" id="WV8-TG-IOi"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -715,7 +715,7 @@
                                 <frame key="frameInset" minX="16" minY="90" width="343" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-7B-Fvu">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-7B-Fvu">
                                         <frame key="frameInset" minX="8" minY="8" width="327" height="206"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>

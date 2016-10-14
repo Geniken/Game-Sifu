@@ -19,23 +19,23 @@ class GameInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard game != nil else {
-            print("Game not properly set")
-            self.dismiss()
-            return
-        }
+//        guard game != nil else {
+//            print("Game not properly set")
+//            self.dismiss()
+//            return
+//        }
         
         setGameInfo()
     }
 
-    private func dismiss() {
-        self.navigationController?.popViewController(animated: true)
-    }
+//    private func dismiss() {
+//        self.navigationController?.popViewController(animated: true)
+//    }
     
     func setGameInfo() {
         
-        gameTitle.text = game.name
-        gameImage.image = game.image
+        //gameTitle.text = game.name
+        //gameImage.image = game.image
         
     }
     
