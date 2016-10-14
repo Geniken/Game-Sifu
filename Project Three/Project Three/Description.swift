@@ -18,17 +18,4 @@ struct Description {
     
 }
 
-//extension Description {
-//    static func fromDictionary(dictionary:NSDictionary) -> Description? {
-//        
-//        guard let text = dictionary[" "] as? String,
-//            let user = dictionary[" "] as? User,
-//            let url = dictionary[" "] as? String
-//        
-//        
-//        
-//    }
-//    else {
-//    return
-//    }
-//}
+

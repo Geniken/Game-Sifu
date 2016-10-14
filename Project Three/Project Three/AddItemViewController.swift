@@ -81,14 +81,14 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         
     }
     
-//        if let gameImage = image {
-//            guard let imageData = UIImageJPEGRepresentation(gameImage, 1.0) else { return nil }
-//            let imageFile = PFFile(name:"image.jpeg", data:imageData)
-//            
-//            return imageFile
-//        } else {
-//            return nil
-//        }
+    //        if let gameImage = image {
+    //            guard let imageData = UIImageJPEGRepresentation(gameImage, 1.0) else { return nil }
+    //            let imageFile = PFFile(name:"image.jpeg", data:imageData)
+    //
+    //            return imageFile
+    //        } else {
+    //            return nil
+    //        }
     
     
     func registerGame () {
@@ -100,9 +100,9 @@ class AddItemViewController : UIViewController, UIImagePickerControllerDelegate,
         game["gamePrice"] = askingPriceText.text
         game["gameQuantity"] = gameQuantityText.text
         game["gameAge"] = gameAgeText.text
-//        game["picture"] = convertToPFFile(image: saveImage.image)
+        //        game["picture"] = convertToPFFile(image: saveImage.image)
         game["Username"] = gameUsername.text
-       
+        
         
         game.saveInBackground { (suceeded: Bool, error: Error?) in
             guard error == nil else { print("error is \(error)") ; return }

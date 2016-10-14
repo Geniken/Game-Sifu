@@ -13,9 +13,12 @@ import Parse
 
 class GameSelectionViewController: UICollectionViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         queryParse()
+        
+        
     }
     
     var selectedIndex: Int?
@@ -25,7 +28,7 @@ class GameSelectionViewController: UICollectionViewController {
     
     func queryParse() {
         
-        var query = PFQuery(className:"GameInformation")
+        let query = PFQuery(className:"GameInformation")
         
         //query.whereKey("gameName", equalTo:"Mario Kart: Double Dash")
         
@@ -52,7 +55,7 @@ class GameSelectionViewController: UICollectionViewController {
                     guard let imageData = imageData else { return }
                     let convertedImage = UIImage(data: imageData)
                     
-                    // greate single game item
+                    // create single game item
                     
                     let game = GameInfo(name: name, image: convertedImage, ratings: nil, reviews: nil, similarGames: nil, cost: cost, console: console, quantity: quantity)
                     
@@ -146,7 +149,7 @@ extension GameSelectionViewController : UICollectionViewDelegateFlowLayout {
         imageNow = gameInfoArray[row].image
         textNow = gameInfoArray[row].name
         consoleNow = gameInfoArray[row].console
-//        priceNow = gameInfoArray[row].price
+        costNow = gameInfoArray[row].cost
         
         
         self.performSegue(withIdentifier: "gameInfoSegue", sender: self)

@@ -13,16 +13,12 @@ import UIKit
 var imageNow: UIImage?
 var textNow: String?
 var costNow: String?
-var consoleNow: String? 
+var consoleNow: String?
 
 class GameInformationViewController: UIViewController {
     
-//    overrride func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
-
     @IBOutlet weak var specificGameImage: UIImageView!
-  
+    
     @IBOutlet weak var specificGameName: UILabel!
     
     @IBOutlet weak var specificGameConsole: UILabel!
@@ -37,12 +33,10 @@ class GameInformationViewController: UIViewController {
         
         specificGameImage.image = imageNow
         specificGameName.text = textNow
-//        specificPrice. = priceNow
+        specificPrice.text = costNow
         specificGameConsole.text = consoleNow
         
-        
     }
-    
-    
-    
+
 }
+
