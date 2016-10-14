@@ -1116,16 +1116,16 @@
             </objects>
             <point key="canvasLocation" x="5440.8000000000002" y="-578.86056971514245"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Manage Items-->
         <scene sceneID="UKl-34-Ias">
             <objects>
-                <tableViewController id="EIe-rg-3Vt" sceneMemberID="viewController">
+                <tableViewController id="EIe-rg-3Vt" userLabel="Manage Items" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" id="zsD-nG-AWU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gameInfoCheckout" rowHeight="112" id="CpM-T6-9yT" customClass="CheckoutTableViewCell" customModule="Project_Three" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="manageItems" rowHeight="112" id="CpM-T6-9yT" userLabel="ManageItems" customClass="MerchantItemTableViewCell" customModule="Project_Three" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CpM-T6-9yT" id="Vwx-Xy-lxP">
@@ -1160,6 +1160,12 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.3294117647" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="merchantItemConsole" destination="kQe-7d-CF3" id="Vpn-Jc-rpl"/>
+                                    <outlet property="merchantItemImage" destination="zj8-7d-kw8" id="DSo-e5-Y8I"/>
+                                    <outlet property="merchantItemName" destination="ywU-Nc-uhw" id="sG4-GC-Cbp"/>
+                                    <outlet property="merchantItemPrice" destination="yre-H8-arW" id="j2r-VF-F2W"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
