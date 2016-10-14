@@ -23,9 +23,6 @@ class GameSelectionViewController: UICollectionViewController {
     
     var selectedIndex: Int?
     
-    var gameInfoArray: [GameInfo] = []
-    
-    
     func queryParse() {
         
         let query = PFQuery(className:"GameInformation")
@@ -39,7 +36,6 @@ class GameSelectionViewController: UICollectionViewController {
             guard let objects = objects else { print("error finding objects: \(error)") ; return }
             
             for object in objects {
-                print(object)
                 
                 guard let name = object["gameName"] as? String else { print("nil name found"); return }
                 guard let cost = object["gamePrice"] as? String else { print("nil cost found") ; continue }
@@ -60,9 +56,8 @@ class GameSelectionViewController: UICollectionViewController {
                     let game = GameInfo(name: name, image: convertedImage, ratings: nil, reviews: nil, similarGames: nil, cost: cost, console: console, quantity: quantity)
                     
                     //append your gameInfoArray
-                    print(">>>> GAME: \(game)")
-                    self.gameInfoArray.append(game)
-                    print(self.gameInfoArray.count)
+                    gameInfoArray.append(game)
+                    
                     
                     DispatchQueue.main.async {
                         self.collectionView?.reloadData()
@@ -74,13 +69,9 @@ class GameSelectionViewController: UICollectionViewController {
                 
             }
             
-            
-            
-            
         })
         
     }
-    
     
 }
 
@@ -98,7 +89,7 @@ extension GameSelectionViewController {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectioncell", for: indexPath) as! GameSelectionCollectionViewCell
         
-        let parseData = self.gameInfoArray[indexPath.row]
+        let parseData = gameInfoArray[indexPath.row]
         
         cell.gameName.text = parseData.name
         cell.gameImage.image = parseData.image

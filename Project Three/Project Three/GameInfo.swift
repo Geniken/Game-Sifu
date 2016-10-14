@@ -22,4 +22,9 @@ struct GameInfo {
     
 }
 
+var gameInfoArray:[GameInfo] = []
+
+var checkOutCartArray: [GameInfo] = []
+
+var merchantItemsArray: [GameInfo] = []
 

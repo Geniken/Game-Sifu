@@ -25,6 +25,7 @@
 		8B86180D1DB0C51900B355B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B86180C1DB0C51900B355B5 /* Social.framework */; };
 		8B86180F1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */; };
 		8B8618131DB0DAB900B355B5 /* ManageItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */; };
+		8B8618171DB171CF00B355B5 /* MerchantItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618161DB171CF00B355B5 /* MerchantItemTableViewCell.swift */; };
 		8B8706411DB0120600896FE8 /* GameSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */; };
 		8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070241DA3334F007798D6 /* AppDelegate.swift */; };
 		8BB070271DA3334F007798D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070261DA3334F007798D6 /* ViewController.swift */; };
@@ -32,7 +33,6 @@
 		8BB0702C1DA3334F007798D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB0702B1DA3334F007798D6 /* Assets.xcassets */; };
 		8BB0702F1DA3334F007798D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB0702D1DA3334F007798D6 /* LaunchScreen.storyboard */; };
 		8BB0703A1DA33399007798D6 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070361DA33399007798D6 /* Description.swift */; };
-		8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070381DA33399007798D6 /* Merchant.swift */; };
 		8BB0703D1DA33399007798D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070391DA33399007798D6 /* User.swift */; };
 		8BB276761DAC393A00553A20 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB276751DAC393A00553A20 /* AddItemViewController.swift */; };
 		8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB276791DAC524400553A20 /* AddItem.swift */; };
@@ -65,6 +65,7 @@
 		8B86180C1DB0C51900B355B5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
 		8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageItemsTableViewController.swift; sourceTree = "<group>"; };
+		8B8618161DB171CF00B355B5 /* MerchantItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantItemTableViewCell.swift; sourceTree = "<group>"; };
 		8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		8BB070211DA3334F007798D6 /* Project Three.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Three.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB070241DA3334F007798D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		8BB0702E1DA3334F007798D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BB070301DA3334F007798D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB070361DA33399007798D6 /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
-		8BB070381DA33399007798D6 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
 		8BB070391DA33399007798D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8BB276751DAC393A00553A20 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		8BB276791DAC524400553A20 /* AddItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
@@ -178,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				8BB070391DA33399007798D6 /* User.swift */,
-				8BB070381DA33399007798D6 /* Merchant.swift */,
 				8B6BD89B1DA81C410099DE1E /* GameInfo.swift */,
 				8B6BD89F1DA81C670099DE1E /* GamesListClass.swift */,
 				8BB276791DAC524400553A20 /* AddItem.swift */,
@@ -196,6 +195,7 @@
 				8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */,
 				8B6BD8AF1DA820FF0099DE1E /* PlaystationTableViewController.swift */,
 				8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */,
+				8B8618161DB171CF00B355B5 /* MerchantItemTableViewCell.swift */,
 				8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */,
 			);
 			name = Views;
@@ -383,9 +383,9 @@
 				8B6BD8A21DA81C6F0099DE1E /* GamesListViewController.swift in Sources */,
 				8BC5C8691DAD72C0006BBA63 /* SignUpViewController.swift in Sources */,
 				8B8706411DB0120600896FE8 /* GameSelectionCollectionViewCell.swift in Sources */,
-				8BB0703C1DA33399007798D6 /* Merchant.swift in Sources */,
 				8BCD12E11DA5BF7300185AB3 /* LoginViewController.swift in Sources */,
 				8B8618081DB09F1B00B355B5 /* CheckoutTableViewController.swift in Sources */,
+				8B8618171DB171CF00B355B5 /* MerchantItemTableViewCell.swift in Sources */,
 				8BC5C8651DAC99D8006BBA63 /* GameSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

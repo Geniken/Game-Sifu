@@ -18,8 +18,6 @@ var consoleNow: String?
 
 class GameInformationViewController: UIViewController {
     
-    var gameInfoArray:[GameInfo] = []
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +46,16 @@ class GameInformationViewController: UIViewController {
     @IBAction func addToCart(_ sender: AnyObject) {
         
         self.performSegue(withIdentifier: "toCheckout", sender: self)
-
+        
+        let name = specificGameName.text
+        let console = specificGameConsole.text
+        let image = specificGameImage.image
+        let price = specificPrice.text
+        
+         let game = GameInfo(name: name!, image: image, ratings: nil, reviews: nil, similarGames: nil, cost: price, console: console!, quantity: nil)
+        
+        checkOutCartArray.append(game)
+        print("checkoutCartArray equals \(checkOutCartArray)")
         
     }
     
