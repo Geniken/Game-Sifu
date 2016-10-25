@@ -687,53 +687,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tql-Zn-Bv1">
-                                <frame key="frameInset" minX="16" minY="90" width="343" height="222"/>
+                                <frame key="frameInset" minX="16" minY="90" width="343" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-7B-Fvu">
-                                        <frame key="frameInset" minX="8" minY="8" width="327" height="206"/>
+                                        <frame key="frameInset" minX="8" minY="8" width="327" height="267"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCE-aT-OkW">
-                                <frame key="frameInset" minX="16" minY="355" width="113" height="21"/>
+                                <frame key="frameInset" minX="16" minY="398" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
                                 <color key="textColor" red="0.98223444433153895" green="0.97723534348973184" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVN-vI-2n2">
-                                <frame key="frameInset" minX="159" minY="355" width="200" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
-                                <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Console" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-HJ-wFI">
-                                <frame key="frameInset" minX="159" minY="403" width="200" height="21"/>
+                                <frame key="frameInset" minX="159" minY="442" width="200" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri6-4m-trY">
-                                <frame key="frameInset" minX="159" minY="446" width="200" height="21"/>
+                                <frame key="frameInset" minX="159" minY="479" width="200" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Console:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BD-fj-TFE">
-                                <frame key="frameInset" minX="16" minY="402" width="135" height="21"/>
+                                <frame key="frameInset" minX="16" minY="442" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sj-Tk-qXH">
-                                <frame key="frameInset" minX="16" minY="446" width="64" height="21"/>
+                                <frame key="frameInset" minX="16" minY="479" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -751,6 +744,13 @@
                                     <action selector="addToCart:" destination="MDn-4N-dma" eventType="touchUpInside" id="bbu-Fo-c9R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVN-vI-2n2">
+                                <frame key="frameInset" minX="159" minY="398" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
+                                <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
