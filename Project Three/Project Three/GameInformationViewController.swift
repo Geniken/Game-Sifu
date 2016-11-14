@@ -18,14 +18,17 @@ var consoleNow: String?
 
 class GameInformationViewController: UIViewController {
     
+    @IBOutlet weak var viewOfImage: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        guard let price = costNow else {return}
         specificGameImage.image = imageNow
         specificGameName.text = textNow
-        specificPrice.text = costNow
+        specificPrice.text = "$ \(price)"
         specificGameConsole.text = consoleNow
+        viewOfImage.layer.cornerRadius = 15
         
     }
     

@@ -15,4 +15,9 @@ class GameSelectionCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var gameImage: UIImageView!
     
+    override func awakeFromNib() {
+        gameImage.layer.cornerRadius = 15
+        gameName.layer.cornerRadius = 15
+    }
+
 }
