@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7129FAB61478FA70223DADF4921468CD"
-               BuildableName = "Bolts.framework"
-               BlueprintName = "Bolts"
+               BlueprintIdentifier = "06BEC9F6F66BE44EB231F0BAAA5DF39E"
+               BuildableName = "SwiftSpinner.framework"
+               BlueprintName = "SwiftSpinner"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7129FAB61478FA70223DADF4921468CD"
-            BuildableName = "Bolts.framework"
-            BlueprintName = "Bolts"
+            BlueprintIdentifier = "06BEC9F6F66BE44EB231F0BAAA5DF39E"
+            BuildableName = "SwiftSpinner.framework"
+            BlueprintName = "SwiftSpinner"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

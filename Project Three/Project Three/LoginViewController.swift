@@ -14,15 +14,22 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
     
     
     @IBOutlet weak var userNameTextField: UITextField!
+    
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var makeAccount: UIButton!
     
     @IBOutlet weak var logoutButton: UIBarButtonItem!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        makeAccount.layer.cornerRadius = 15
+        loginButton.layer.cornerRadius = 15
+        
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddItemViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -67,20 +74,6 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
         
         PFUser.logInWithUsername(inBackground: userNameField, password: password) { (user, error) in
             
-            print(error)
-            print(user)
-            
-            if error != nil {
-                
-                self.performSegue(withIdentifier: "signIn", sender: self)
-                print("Yay you logged in")
-                print(user)
-                
-            } else {
-                
-                print ("error: \(error)")
-                
-            }
         }
     }
     

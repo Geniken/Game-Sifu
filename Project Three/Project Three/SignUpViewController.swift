@@ -12,6 +12,7 @@ import Parse
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var create: UIButton!
     
     @IBOutlet weak var signUpUsername: UITextField!
     
@@ -22,6 +23,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpPasswordConfirmation: UITextField!
     
     @IBAction func signUpUser(_ sender: UIButton) {
+        
         signUpNewUser()
     }
     
@@ -53,6 +55,8 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        create.layer.cornerRadius = 15
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddItemViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)

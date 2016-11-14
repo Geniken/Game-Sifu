@@ -21,8 +21,6 @@
 		8B8618081DB09F1B00B355B5 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */; };
 		8B86180D1DB0C51900B355B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B86180C1DB0C51900B355B5 /* Social.framework */; };
 		8B86180F1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */; };
-		8B8618131DB0DAB900B355B5 /* ManageItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */; };
-		8B8618171DB171CF00B355B5 /* MerchantItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618161DB171CF00B355B5 /* MerchantItemTableViewCell.swift */; };
 		8B8706411DB0120600896FE8 /* GameSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */; };
 		8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070241DA3334F007798D6 /* AppDelegate.swift */; };
 		8BB070271DA3334F007798D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070261DA3334F007798D6 /* ViewController.swift */; };
@@ -33,7 +31,7 @@
 		8BB0703D1DA33399007798D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB070391DA33399007798D6 /* User.swift */; };
 		8BB276761DAC393A00553A20 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB276751DAC393A00553A20 /* AddItemViewController.swift */; };
 		8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB276791DAC524400553A20 /* AddItem.swift */; };
-		8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */; };
+		8BB33CA61DDA6DE600C40065 /* SEGATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB33CA51DDA6DE600C40065 /* SEGATableViewController.swift */; };
 		8BC5C8651DAC99D8006BBA63 /* GameSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */; };
 		8BC5C8691DAD72C0006BBA63 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */; };
 		8BC636961DA7391E008CAF3C /* Playstation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BC636951DA7391E008CAF3C /* Playstation.gif */; };
@@ -58,8 +56,6 @@
 		8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
 		8B86180C1DB0C51900B355B5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
-		8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageItemsTableViewController.swift; sourceTree = "<group>"; };
-		8B8618161DB171CF00B355B5 /* MerchantItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantItemTableViewCell.swift; sourceTree = "<group>"; };
 		8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		8BB070211DA3334F007798D6 /* Project Three.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Three.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB070241DA3334F007798D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +68,7 @@
 		8BB070391DA33399007798D6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8BB276751DAC393A00553A20 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		8BB276791DAC524400553A20 /* AddItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
-		8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8BB33CA51DDA6DE600C40065 /* SEGATableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEGATableViewController.swift; sourceTree = "<group>"; };
 		8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionViewController.swift; sourceTree = "<group>"; };
 		8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8BC636951DA7391E008CAF3C /* Playstation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation.gif; sourceTree = "<group>"; };
@@ -115,14 +111,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8B8618091DB0C3A800B355B5 /* Merchant View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */,
-			);
-			name = "Merchant View Controllers";
-			sourceTree = "<group>";
-		};
 		8BB070181DA3334F007798D6 = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +138,6 @@
 				8BB070301DA3334F007798D6 /* Info.plist */,
 				8BB0703F1DA33CE2007798D6 /* Views */,
 				8BB0703E1DA333A8007798D6 /* Model */,
-				8B8618091DB0C3A800B355B5 /* Merchant View Controllers */,
 				8BCD13121DA6C22800185AB3 /* User View Controllers */,
 				8BC6369B1DA73934008CAF3C /* Gif */,
 			);
@@ -176,9 +163,9 @@
 				8BB070261DA3334F007798D6 /* ViewController.swift */,
 				8BCD13131DA6C29000185AB3 /* CategoriesViewController.swift */,
 				8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */,
+				8BB33CA51DDA6DE600C40065 /* SEGATableViewController.swift */,
 				8B6BD8AF1DA820FF0099DE1E /* PlaystationTableViewController.swift */,
 				8B8706401DB0120600896FE8 /* GameSelectionCollectionViewCell.swift */,
-				8B8618161DB171CF00B355B5 /* MerchantItemTableViewCell.swift */,
 				8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */,
 			);
 			name = Views;
@@ -205,7 +192,6 @@
 				8BCD12E01DA5BF7300185AB3 /* LoginViewController.swift */,
 				8BC5C8681DAD72C0006BBA63 /* SignUpViewController.swift */,
 				8BC5C8641DAC99D8006BBA63 /* GameSelectionViewController.swift */,
-				8BC5C85E1DAC6FDE006BBA63 /* SettingsViewController.swift */,
 				8BB276751DAC393A00553A20 /* AddItemViewController.swift */,
 				8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */,
 				8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */,
@@ -243,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Daniel Kim";
 				TargetAttributes = {
 					8BB070201DA3334F007798D6 = {
@@ -355,17 +341,15 @@
 				8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */,
 				8B6BD8B01DA820FF0099DE1E /* PlaystationTableViewController.swift in Sources */,
 				8BCD13141DA6C29000185AB3 /* CategoriesViewController.swift in Sources */,
-				8B8618131DB0DAB900B355B5 /* ManageItemsTableViewController.swift in Sources */,
 				8BB0703D1DA33399007798D6 /* User.swift in Sources */,
+				8BB33CA61DDA6DE600C40065 /* SEGATableViewController.swift in Sources */,
 				8B6BD8A01DA81C670099DE1E /* GamesListClass.swift in Sources */,
 				8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */,
-				8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */,
 				8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */,
 				8BC5C8691DAD72C0006BBA63 /* SignUpViewController.swift in Sources */,
 				8B8706411DB0120600896FE8 /* GameSelectionCollectionViewCell.swift in Sources */,
 				8BCD12E11DA5BF7300185AB3 /* LoginViewController.swift in Sources */,
 				8B8618081DB09F1B00B355B5 /* CheckoutTableViewController.swift in Sources */,
-				8B8618171DB171CF00B355B5 /* MerchantItemTableViewCell.swift in Sources */,
 				8BC5C8651DAC99D8006BBA63 /* GameSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +394,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -460,6 +445,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -489,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBCD956285E69B213ACC00C8 /* Pods-Project Three.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P257QVWC92;
 				INFOPLIST_FILE = "Project Three/Info.plist";
@@ -503,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0A9E331C641A99B15BF406E /* Pods-Project Three.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P257QVWC92;
 				INFOPLIST_FILE = "Project Three/Info.plist";

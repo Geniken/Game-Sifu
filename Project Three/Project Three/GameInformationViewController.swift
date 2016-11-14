@@ -18,9 +18,21 @@ var consoleNow: String?
 
 class GameInformationViewController: UIViewController {
     
+    @IBOutlet weak var imageBorder: UIView!
+    
+    @IBOutlet weak var gameImage: UIImageView!
+    
+    @IBOutlet weak var addButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageBorder.layer.cornerRadius = 15
+        
+        gameImage.layer.cornerRadius = 15
+        
+        addButton.layer.cornerRadius = 15
         
         specificGameImage.image = imageNow
         specificGameName.text = textNow

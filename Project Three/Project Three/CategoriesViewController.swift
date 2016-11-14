@@ -12,6 +12,12 @@ import UIKit
 
 class CategoriesViewController: UITableViewController {
     
+    @IBOutlet weak var nintendoBorder: UIView!
+    
+    @IBOutlet weak var playstationBorder: UIView!
+    
+    @IBOutlet weak var segaBorder: UIView!
+    
     @IBOutlet weak var nintendoGif: UIImageView!
     
     @IBOutlet weak var playstationGif: UIImageView!
@@ -20,6 +26,13 @@ class CategoriesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nintendoBorder.layer.cornerRadius = 15
+        playstationBorder.layer.cornerRadius = 15
+        segaBorder.layer.cornerRadius = 15
+        nintendoGif.layer.cornerRadius = 15
+        playstationGif.layer.cornerRadius = 15
+        segaGif.layer.cornerRadius = 15
         
         gifs()
         

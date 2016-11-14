@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        UINavigationBar.appearance().tintColor = UIColor(red: 253, green: 255, blue: 200, alpha: 1)
+
+        
         // Override point for customization after application launch.
         let configuration = ParseClientConfiguration {
             $0.applicationId = "Geniken"

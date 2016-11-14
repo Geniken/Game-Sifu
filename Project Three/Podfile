@@ -9,6 +9,8 @@ target 'Project Three' do
 	pod ‘SideMenu’
     
        pod 'Parse'
+	
+	pod ‘SwiftSpinner’
     
 
     

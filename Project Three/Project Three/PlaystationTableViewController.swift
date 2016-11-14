@@ -11,12 +11,32 @@ import SwiftGifOrigin
 
 class PlaystationTableViewController: UITableViewController {
     
+    @IBOutlet weak var playstation1Border: UIView!
+    
+    @IBOutlet weak var playstationLabel: UIView!
+    
+    @IBOutlet weak var playstation2Border: UIView!
+    
+    @IBOutlet weak var playstation2Label: UIView!
+    
     @IBOutlet weak var playstation1Gif: UIImageView!
     
     @IBOutlet weak var playstation2Gif: UIImageView!
     
     override func viewDidLoad () {
         super.viewDidLoad ()
+        
+        playstation1Gif.layer.cornerRadius = 15
+        
+        playstationLabel.layer.cornerRadius = 15
+        
+        playstation1Border.layer.cornerRadius = 15
+        
+        playstation2Gif.layer.cornerRadius = 15
+        
+        playstation2Label.layer.cornerRadius = 15
+        
+        playstation2Border.layer.cornerRadius = 15
         
         gifs()
     }

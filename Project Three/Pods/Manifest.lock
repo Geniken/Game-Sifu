@@ -4,11 +4,13 @@ PODS:
     - Bolts/Tasks (~> 1.8)
   - SideMenu (2.0.3)
   - SwiftGifOrigin (1.6)
+  - SwiftSpinner (1.0.2)
 
 DEPENDENCIES:
   - Parse
   - SideMenu
   - SwiftGifOrigin (from `https://github.com/bahlo/SwiftGif`, tag `v1.6`)
+  - SwiftSpinner
 
 EXTERNAL SOURCES:
   SwiftGifOrigin:
@@ -25,7 +27,8 @@ SPEC CHECKSUMS:
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
   SideMenu: f179260f85c68ed9b283b4a505600f2e6cbdfb10
   SwiftGifOrigin: 429def6d552f97be0c76b4092ffd3c8ae6635a23
+  SwiftSpinner: 1c80ff6ea1c47e2faa1dfce0fcd5e6b39a47fd51
 
-PODFILE CHECKSUM: f067220b2ecf305d3f3c45dd8a20908eeb377b62
+PODFILE CHECKSUM: 3f68ab9d42e462f9020c29321d3f299f87f3c1ba
 
 COCOAPODS: 1.1.0.rc.2
