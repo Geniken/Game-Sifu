@@ -70,20 +70,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="bdm-ZL-ypQ">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="96Z-9a-NeJ">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyD-5q-DSB">
-                                    <rect key="frame" x="-1" y="-2" width="153" height="29"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" red="0.98056597000000001" green="0.98818216250000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="gdq-Y8-WmT">
                             <color key="tintColor" red="1" green="0.97537779629999999" blue="0.98773120130000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -159,20 +145,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="xoy-a2-ilP">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="vl0-et-LCk">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KW8-dw-tlf">
-                                    <rect key="frame" x="18" y="0.0" width="114" height="23"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                    <color key="textColor" red="1" green="0.9847885938535561" blue="0.94678309268832672" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                     </navigationItem>
                     <connections>
                         <outlet property="signUpEmailAddress" destination="XxQ-K7-MW4" id="NhD-0T-g7v"/>
@@ -273,11 +245,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="w91-jM-tOY">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="Stp-l5-dea">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                     </navigationItem>
                     <connections>
                         <outlet property="nintendoGif" destination="WBg-x9-H6t" id="FZP-9a-hzh"/>
@@ -636,11 +603,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="kkl-Q8-F7j">
-                        <view key="titleView" contentMode="scaleToFill" id="ml0-tV-3m0">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                         <barButtonItem key="rightBarButtonItem" title="Options" id="8Z5-1g-LAs">
                             <color key="tintColor" red="1" green="0.97972451469999999" blue="0.99645759830000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -735,20 +697,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Xv-W3-LTq">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="ndI-9E-kCm">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xO-sU-LCK">
-                                    <rect key="frame" x="34" y="6" width="83" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" red="1" green="0.96217167044566254" blue="0.99287996283965263" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                         <barButtonItem key="rightBarButtonItem" title="Checkout" id="ux5-vg-xSl">
                             <color key="tintColor" red="1" green="0.96217167039999996" blue="0.99287996280000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -940,34 +888,8 @@
                         <sections>
                             <tableViewSection id="oVv-iN-LkO">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KwP-t5-bGv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KwP-t5-bGv" id="igB-Uy-wXa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzI-FS-BTI">
-                                                    <rect key="frame" x="87" y="20" width="100" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                                    <color key="textColor" red="1" green="0.99236740131010537" blue="0.98572593958477162" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="-profile-edit-account-edit-profile-edit-user-sign-icon--icon-32" translatesAutoresizingMaskIntoConstraints="NO" id="klR-Jp-gmT">
-                                                    <rect key="frame" x="15" y="49" width="257" height="237"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mae-RW-BLO">
-                                                    <rect key="frame" x="15" y="75" width="250" height="211"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="nKb-AT-w3i">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nKb-AT-w3i" id="47Z-KT-C3g">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
@@ -1005,20 +927,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="VbG-UG-Pdm">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="97v-xC-DM3">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQX-QX-w2s">
-                                    <rect key="frame" x="17" y="-8" width="116" height="33"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPu-lq-5l8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1362,7 +1270,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="-profile-edit-account-edit-profile-edit-user-sign-icon--icon-32" width="256" height="256"/>
         <image name="GBA.gif" width="400" height="300"/>
         <image name="Game Sifu" width="371" height="371"/>
         <image name="GameGear" width="1000" height="647"/>

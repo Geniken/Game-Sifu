@@ -19,7 +19,6 @@
 		8B6BD8B81DA834560099DE1E /* Playstation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B71DA834560099DE1E /* Playstation1.gif */; };
 		8B8618061DB09D3300B355B5 /* GameInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */; };
 		8B8618081DB09F1B00B355B5 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */; };
-		8B86180B1DB0C3C300B355B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86180A1DB0C3C300B355B5 /* ProfileViewController.swift */; };
 		8B86180D1DB0C51900B355B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B86180C1DB0C51900B355B5 /* Social.framework */; };
 		8B86180F1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */; };
 		8B8618131DB0DAB900B355B5 /* ManageItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */; };
@@ -57,7 +56,6 @@
 		8B6BD8B71DA834560099DE1E /* Playstation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation1.gif; sourceTree = "<group>"; };
 		8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInformationViewController.swift; sourceTree = "<group>"; };
 		8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
-		8B86180A1DB0C3C300B355B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8B86180C1DB0C51900B355B5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8B86180E1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
 		8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageItemsTableViewController.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		8B8618091DB0C3A800B355B5 /* Merchant View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B86180A1DB0C3C300B355B5 /* ProfileViewController.swift */,
 				8B8618121DB0DAB900B355B5 /* ManageItemsTableViewController.swift */,
 			);
 			name = "Merchant View Controllers";
@@ -355,7 +352,6 @@
 				8B86180F1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift in Sources */,
 				8B8618061DB09D3300B355B5 /* GameInformationViewController.swift in Sources */,
 				8B6BD8AE1DA820EB0099DE1E /* NintendoTableViewController.swift in Sources */,
-				8B86180B1DB0C3C300B355B5 /* ProfileViewController.swift in Sources */,
 				8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */,
 				8B6BD8B01DA820FF0099DE1E /* PlaystationTableViewController.swift in Sources */,
 				8BCD13141DA6C29000185AB3 /* CategoriesViewController.swift in Sources */,
