@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NRE-PZ-FJm">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NRE-PZ-FJm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,14 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-BK-6hI">
-                                <frame key="frameInset" minX="101" minY="340" width="173" height="30"/>
+                                <rect key="frame" x="101" y="340" width="173" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrI-Aq-eKT">
-                                <frame key="frameInset" minX="125" minY="418" width="126" height="45"/>
+                                <rect key="frame" x="125" y="418" width="126" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
@@ -40,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3O-qb-fDb">
-                                <frame key="frameInset" minX="95" minY="508" width="186" height="45"/>
+                                <rect key="frame" x="95" y="508" width="186" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
@@ -52,14 +55,14 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcI-8m-5BS">
-                                <frame key="frameInset" minX="101" minY="276" width="173" height="30"/>
+                                <rect key="frame" x="101" y="276" width="173" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game Sifu" translatesAutoresizingMaskIntoConstraints="NO" id="ZcM-85-FpC">
-                                <frame key="frameInset" minX="103" minY="92" width="170" height="162"/>
+                                <rect key="frame" x="103" y="92" width="170" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -72,7 +75,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyD-5q-DSB">
-                                    <frame key="frameInset" minX="-1" minY="-2" width="153" height="29"/>
+                                    <rect key="frame" x="-1" y="-2" width="153" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="0.98056597000000001" green="0.98818216250000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -112,35 +115,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-CP-A0b">
-                                <frame key="frameInset" minX="72" minY="275" width="232" height="30"/>
+                                <rect key="frame" x="72" y="275" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfo-R4-bkc">
-                                <frame key="frameInset" minX="72" minY="342" width="232" height="30"/>
+                                <rect key="frame" x="72" y="342" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-wF-gP8">
-                                <frame key="frameInset" minX="72" minY="138" width="232" height="30"/>
+                                <rect key="frame" x="72" y="138" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-K7-MW4">
-                                <frame key="frameInset" minX="71" minY="211" width="232" height="30"/>
+                                <rect key="frame" x="71" y="211" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrt-KW-ENJ">
-                                <frame key="frameInset" minX="138" minY="430" width="101" height="45"/>
+                                <rect key="frame" x="138" y="430" width="101" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
@@ -161,7 +164,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KW8-dw-tlf">
-                                    <frame key="frameInset" minX="18" width="114" height="23"/>
+                                    <rect key="frame" x="18" y="0.0" width="114" height="23"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
                                     <color key="textColor" red="1" green="0.9847885938535561" blue="0.94678309268832672" alpha="1" colorSpace="calibratedRGB"/>
@@ -195,24 +198,18 @@
                             <tableViewSection id="XNM-a5-QFu">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="2fG-sU-QrW">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="285"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2fG-sU-QrW" id="g68-xQ-Jpi">
-                                            <frame key="frameInset" width="375" height="284"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nintendo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="WBg-x9-H6t">
-                                                    <frame key="frameInset" minX="14" minY="67" width="349" height="209"/>
+                                                    <rect key="frame" x="14" y="67" width="349" height="209"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQa-cs-isn">
-                                                    <frame key="frameInset" minX="-1" minY="1" height="44" maxX="2"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                    <color key="barTintColor" red="0.59705379012199145" green="0.58613232105420343" blue="0.63402083333333326" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </searchBar>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkx-i2-k3S" userLabel="Nintendo Button">
-                                                    <frame key="frameInset" minX="5" minY="67" width="354" height="209"/>
+                                                    <rect key="frame" x="5" y="67" width="354" height="209"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="mux-WT-9Pk" kind="show" id="lyk-3n-3AN"/>
@@ -223,18 +220,18 @@
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="255" id="Atd-Co-anW">
-                                        <rect key="frame" x="0.0" y="349" width="375" height="255"/>
+                                        <rect key="frame" x="0.0" y="285" width="375" height="255"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Atd-Co-anW" id="KcT-2C-xkM">
-                                            <frame key="frameInset" width="375" height="254"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Playstation.gif" translatesAutoresizingMaskIntoConstraints="NO" id="r1o-v7-9zr" userLabel="Playstation Gif">
-                                                    <frame key="frameInset" minX="13" minY="21" width="349" height="211"/>
+                                                    <rect key="frame" x="13" y="21" width="349" height="211"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-nc-bBi" userLabel="PS Button">
-                                                    <frame key="frameInset" minX="8" minY="15" width="359" height="224"/>
+                                                    <rect key="frame" x="8" y="15" width="359" height="224"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="bQ6-nl-QXt" kind="show" id="UaJ-mm-6rg"/>
@@ -245,18 +242,18 @@
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="7sc-aN-2GU">
-                                        <rect key="frame" x="0.0" y="604" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="540" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7sc-aN-2GU" id="ZDa-0w-h31">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sega.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Mc4-GX-KxB">
-                                                    <frame key="frameInset" minX="13" minY="18" width="349" height="212"/>
+                                                    <rect key="frame" x="13" y="18" width="349" height="212"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-wc-8DO" userLabel="Sega Button">
-                                                    <frame key="frameInset" minX="8" minY="12" width="359" height="224"/>
+                                                    <rect key="frame" x="8" y="12" width="359" height="224"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="azl-Sv-RuA" kind="show" id="Ucx-Gb-PFn"/>
@@ -279,15 +276,6 @@
                         <view key="titleView" contentMode="scaleToFill" id="Stp-l5-dea">
                             <rect key="frame" x="113" y="6" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIf-ND-1Te">
-                                    <frame key="frameInset" minY="-8" width="153" height="33"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" red="1" green="0.98730889310000003" blue="0.96183501940000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                     </navigationItem>
@@ -313,22 +301,22 @@
                             <tableViewSection id="YJt-zd-j4r">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="o96-kE-p7Z">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o96-kE-p7Z" id="sOu-UJ-vXe">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nintendo64.gif" translatesAutoresizingMaskIntoConstraints="NO" id="qa8-9V-ZRr">
-                                                    <frame key="frameInset" minX="8" minY="8" width="356" height="233"/>
+                                                    <rect key="frame" x="8" y="8" width="356" height="233"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-iQ-FnF">
-                                                    <frame key="frameInset" minX="8" minY="8" width="116" height="27"/>
+                                                    <rect key="frame" x="8" y="8" width="116" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nintendo 64" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2x-09-ifX" userLabel="Nintendo 64">
-                                                            <frame key="frameInset" minX="8" minY="3" width="108" height="21"/>
+                                                            <rect key="frame" x="8" y="3" width="108" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -338,7 +326,7 @@
                                                     <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC2-4K-YbM" userLabel="Nintendo 64 button">
-                                                    <frame key="frameInset" minX="8" minY="8" width="356" height="233"/>
+                                                    <rect key="frame" x="8" y="8" width="356" height="233"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="VOM-Op-CVe" kind="show" id="l2h-4s-4dG"/>
@@ -349,22 +337,22 @@
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="3rI-Wm-gTJ">
-                                        <rect key="frame" x="0.0" y="314" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="250" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3rI-Wm-gTJ" id="PPn-Jz-XAR">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gamecube.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Wwc-IB-JYj">
-                                                    <frame key="frameInset" minX="8" minY="8" width="359" height="233"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="233"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Wd-Ix-d0f">
-                                                    <frame key="frameInset" minX="8" minY="8" width="97" height="27"/>
+                                                    <rect key="frame" x="8" y="8" width="97" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GameCube" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnn-mn-vuw">
-                                                            <frame key="frameInset" minX="8" minY="3" width="118" height="21"/>
+                                                            <rect key="frame" x="8" y="3" width="118" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -374,7 +362,7 @@
                                                     <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jO-2G-X9E" userLabel="Gamecube Button">
-                                                    <frame key="frameInset" minX="15" minY="9" width="342" height="232"/>
+                                                    <rect key="frame" x="15" y="9" width="342" height="232"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="VOM-Op-CVe" kind="show" id="8Xw-R0-iVY"/>
@@ -385,33 +373,33 @@
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="3v1-db-FTc">
-                                        <rect key="frame" x="0.0" y="564" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="500" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3v1-db-FTc" id="dG9-bO-r1f">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKV-pf-xch" userLabel="GameBoy">
-                                                    <frame key="frameInset" minX="10" minY="8" width="354" height="233"/>
+                                                    <rect key="frame" x="10" y="8" width="354" height="233"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GBA.gif" translatesAutoresizingMaskIntoConstraints="NO" id="WMp-Bo-Fkf">
-                                                            <frame key="frameInset" minX="11" minY="12" width="332" height="210"/>
+                                                            <rect key="frame" x="11" y="12" width="332" height="210"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IH-UU-PPH" userLabel="Gameboy Button">
-                                                            <frame key="frameInset" width="354" height="233"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="233"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <connections>
                                                                 <segue destination="VOM-Op-CVe" kind="show" id="lQE-jE-eO8"/>
                                                             </connections>
                                                         </button>
                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-GX-Agq">
-                                                            <frame key="frameInset" width="152" height="27"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="152" height="27"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" GameBoy Advance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM6-yW-WZV">
-                                                                    <frame key="frameInset" minY="3" width="146" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="3" width="146" height="21"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -442,7 +430,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nintendo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDP-5Q-73J">
-                                    <frame key="frameInset" minY="5.6843418860808015e-13" width="153" height="33"/>
+                                    <rect key="frame" x="0.0" y="5.6843418860808015e-13" width="153" height="33"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="1" green="0.98730889310000003" blue="0.96183501940000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -474,22 +462,22 @@
                             <tableViewSection id="vXd-fI-Wp6">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="328" id="KNB-1G-rFL">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="328"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="328"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KNB-1G-rFL" id="aqZ-Nd-Qqu">
-                                            <frame key="frameInset" width="375" height="327"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Playstation1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="n3d-ym-xJj">
-                                                    <frame key="frameInset" minX="8" minY="17" width="357" height="295"/>
+                                                    <rect key="frame" x="8" y="17" width="357" height="295"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdX-0r-toc" userLabel="PS 1 Label View">
-                                                    <frame key="frameInset" minX="8" minY="17" width="116" height="27"/>
+                                                    <rect key="frame" x="8" y="17" width="116" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Playstation 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fu0-6f-AHY">
-                                                            <frame key="frameInset" minX="8" minY="3" width="145" height="21"/>
+                                                            <rect key="frame" x="8" y="3" width="145" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -499,7 +487,7 @@
                                                     <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYf-nl-h5o" userLabel="PS1 Button">
-                                                    <frame key="frameInset" minX="9" minY="17" width="356" height="295"/>
+                                                    <rect key="frame" x="9" y="17" width="356" height="295"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="VOM-Op-CVe" kind="show" id="9bw-RS-chq"/>
@@ -510,22 +498,22 @@
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="350" id="zmU-tX-GYw">
-                                        <rect key="frame" x="0.0" y="392" width="375" height="350"/>
+                                        <rect key="frame" x="0.0" y="328" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zmU-tX-GYw" id="ZdB-kq-ISG">
-                                            <frame key="frameInset" width="375" height="349"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="349"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Playstation2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="NJd-d9-LM8">
-                                                    <frame key="frameInset" minX="8" minY="19" width="359" height="295"/>
+                                                    <rect key="frame" x="8" y="19" width="359" height="295"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9j8-su-2nL" userLabel="PS 2 Label View">
-                                                    <frame key="frameInset" minX="8" minY="19" width="116" height="27"/>
+                                                    <rect key="frame" x="8" y="19" width="116" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Playstation 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y1-7t-uWT">
-                                                            <frame key="frameInset" minX="8" minY="3" width="108" height="21"/>
+                                                            <rect key="frame" x="8" y="3" width="108" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -535,7 +523,7 @@
                                                     <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gg-xl-HyH" userLabel="PS2 Button">
-                                                    <frame key="frameInset" minX="8" minY="19" width="359" height="295"/>
+                                                    <rect key="frame" x="8" y="19" width="359" height="295"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="VOM-Op-CVe" kind="show" id="JtA-Qk-Fdx"/>
@@ -560,7 +548,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Playstation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbs-cd-5ia">
-                                    <frame key="frameInset" minX="3" minY="-4" width="145" height="29"/>
+                                    <rect key="frame" x="3" y="-4" width="145" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="1" green="0.98876127831924998" blue="0.99063589331216606" alpha="1" colorSpace="calibratedRGB"/>
@@ -601,10 +589,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="365" height="268"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-cV-c5H" userLabel="Game Image"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-cV-c5H" userLabel="Game Image">
+                                            <rect key="frame" x="8" y="8" width="215" height="252"/>
+                                        </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-lQ-hth" userLabel="GameName View">
+                                            <rect key="frame" x="8" y="8" width="215" height="24"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vly-iy-WbV">
+                                                    <rect key="frame" x="8" y="-3" width="207" height="30"/>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -647,20 +639,7 @@
                         <view key="titleView" contentMode="scaleToFill" id="ml0-tV-3m0">
                             <rect key="frame" x="113" y="6" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h67-gL-Gtg">
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" red="1" green="0.97537779629421029" blue="0.9877312012914673" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="h67-gL-Gtg" firstAttribute="centerX" secondItem="ml0-tV-3m0" secondAttribute="centerX" id="Msb-kb-vGr"/>
-                                <constraint firstItem="h67-gL-Gtg" firstAttribute="top" secondItem="ml0-tV-3m0" secondAttribute="top" constant="4" id="a3v-DG-Hlx"/>
-                                <constraint firstAttribute="bottom" secondItem="h67-gL-Gtg" secondAttribute="bottom" constant="8" id="kmH-a7-wLP"/>
-                                <constraint firstItem="h67-gL-Gtg" firstAttribute="leading" secondItem="ml0-tV-3m0" secondAttribute="leading" constant="23" id="lJV-aL-Acz"/>
-                            </constraints>
                         </view>
                         <barButtonItem key="rightBarButtonItem" title="Options" id="8Z5-1g-LAs">
                             <color key="tintColor" red="1" green="0.97972451469999999" blue="0.99645759830000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -687,53 +666,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tql-Zn-Bv1">
-                                <frame key="frameInset" minX="16" minY="90" width="343" height="284"/>
+                                <rect key="frame" x="16" y="90" width="343" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-7B-Fvu">
-                                        <frame key="frameInset" minX="8" minY="8" width="327" height="267"/>
+                                        <rect key="frame" x="8" y="8" width="327" height="267"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCE-aT-OkW">
-                                <frame key="frameInset" minX="16" minY="398" width="113" height="21"/>
+                                <rect key="frame" x="16" y="398" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
                                 <color key="textColor" red="0.98223444433153895" green="0.97723534348973184" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Console" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-HJ-wFI">
-                                <frame key="frameInset" minX="159" minY="442" width="200" height="21"/>
+                                <rect key="frame" x="159" y="442" width="200" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri6-4m-trY">
-                                <frame key="frameInset" minX="159" minY="479" width="200" height="21"/>
+                                <rect key="frame" x="159" y="479" width="200" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Console:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BD-fj-TFE">
-                                <frame key="frameInset" minX="16" minY="442" width="135" height="21"/>
+                                <rect key="frame" x="16" y="442" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sj-Tk-qXH">
-                                <frame key="frameInset" minX="16" minY="479" width="64" height="21"/>
+                                <rect key="frame" x="16" y="479" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFZ-Fb-55Y">
-                                <frame key="frameInset" minX="92" minY="540" width="190" height="45"/>
+                                <rect key="frame" x="92" y="540" width="190" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
@@ -745,7 +724,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVN-vI-2n2">
-                                <frame key="frameInset" minX="159" minY="398" width="200" height="21"/>
+                                <rect key="frame" x="159" y="398" width="200" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                 <color key="textColor" red="0.98223444429999995" green="0.97723534349999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -761,7 +740,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xO-sU-LCK">
-                                    <frame key="frameInset" minX="34" minY="6" width="83" height="21"/>
+                                    <rect key="frame" x="34" y="6" width="83" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="1" green="0.96217167044566254" blue="0.99287996283965263" alpha="1" colorSpace="calibratedRGB"/>
@@ -810,32 +789,32 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gameCheckoutCell" rowHeight="112" id="DVF-kP-sAO" customClass="CheckoutTableViewCell" customModule="Project_Three" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="112"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DVF-kP-sAO" id="v11-W2-dhv">
-                                    <frame key="frameInset" width="375" height="111"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-0S-H3s">
-                                            <frame key="frameInset" minX="8" minY="12" width="91" height="87"/>
+                                            <rect key="frame" x="8" y="12" width="91" height="87"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GameName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y68-Ol-PCA">
-                                            <frame key="frameInset" minX="119" minY="25" width="218" height="21"/>
+                                            <rect key="frame" x="119" y="25" width="218" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                             <color key="textColor" red="0.98575991841318045" green="1" blue="0.97421771218938702" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Console" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUy-HS-oZU">
-                                            <frame key="frameInset" minX="119" minY="73" width="218" height="21"/>
+                                            <rect key="frame" x="119" y="73" width="218" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                             <color key="textColor" red="0.98575991839999999" green="1" blue="0.97421771219999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmm-uz-RLE">
-                                            <frame key="frameInset" minX="297" minY="53" width="70" height="21"/>
+                                            <rect key="frame" x="297" y="53" width="70" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                             <color key="textColor" red="0.98575991839999999" green="1" blue="0.97421771219999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -852,21 +831,21 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalCost" id="thh-yl-Ead">
-                                <rect key="frame" x="0.0" y="204" width="375" height="112"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="thh-yl-Ead" id="nFX-y2-EMO">
-                                    <frame key="frameInset" width="375" height="111"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgc-ix-WMZ">
-                                            <frame key="frameInset" minX="275" minY="46" width="92" height="21"/>
+                                            <rect key="frame" x="275" y="46" width="92" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                             <color key="textColor" red="0.98575991839999999" green="1" blue="0.97421771219999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Cost:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPq-n8-6n5">
-                                            <frame key="frameInset" minX="8" minY="45" width="92" height="21"/>
+                                            <rect key="frame" x="8" y="45" width="92" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                             <color key="textColor" red="0.98575991839999999" green="1" blue="0.97421771219999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -890,7 +869,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEe-Bh-NQe">
-                                    <frame key="frameInset" minX="7" minY="-4" width="136" height="29"/>
+                                    <rect key="frame" x="7" y="-4" width="136" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="0.97382096224784698" green="1" blue="0.96642555556884213" alpha="1" colorSpace="calibratedRGB"/>
@@ -915,10 +894,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="4cW-MO-3mW">
-                                <rect key="frame" x="0.0" y="92" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4cW-MO-3mW" id="h7K-y8-dHV">
-                                    <frame key="frameInset" width="375" height="59"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -935,7 +914,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuz-2l-hrw">
-                                    <frame key="frameInset" minX="18" minY="-4" width="114" height="29"/>
+                                    <rect key="frame" x="18" y="-4" width="114" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="0.99345014236637397" green="0.96734624116192625" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -950,251 +929,6 @@
             </objects>
             <point key="canvasLocation" x="4734" y="1676"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="Zfm-LR-BoP">
-            <objects>
-                <tableViewController id="sIJ-zp-feF" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="28" sectionFooterHeight="28" id="gWJ-se-TEF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RA7-JY-Zu3">
-                            <rect key="frame" x="0.0" y="171" width="375" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.20392156859999999" green="0.3294117647" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="Xf7-zf-Ipn">
-                                <rect key="frame" x="0.0" y="92" width="375" height="79"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xf7-zf-Ipn" id="PUB-L5-9LX">
-                                    <frame key="frameInset" width="375" height="78"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.3294117647" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="sIJ-zp-feF" id="143-Vf-QXk"/>
-                            <outlet property="delegate" destination="sIJ-zp-feF" id="4kT-ME-jWj"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="TbP-dM-tnS">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="B38-JL-3vL">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56b-2H-bqA">
-                                    <frame key="frameInset" minX="-7" width="164" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" red="0.98414359451704692" green="1" blue="0.99650860258814433" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="egT-Fk-Wdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5440.8000000000002" y="-1281.4092953523239"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="K7t-Hz-ipn">
-            <objects>
-                <viewController id="sEY-dV-Az6" userLabel="Profile" customClass="ProfileViewController" customModule="Project_Three" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="60I-B5-g9s"/>
-                        <viewControllerLayoutGuide type="bottom" id="slp-Xi-7MR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XgT-EZ-K7K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitpic_camera_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jQ0-WN-hpq">
-                                <frame key="frameInset" minX="51" minY="103" width="272" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a Profile Pic!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPI-Ay-iCU">
-                                <frame key="frameInset" minX="61" minY="88" width="246" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.99893552159981003" blue="0.98269172486364242" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2S6-FO-Ta8">
-                                <frame key="frameInset" minX="61" minY="88" width="246" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaW-YZ-upH">
-                                <frame key="frameInset" minX="74" minY="443" width="227" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                <state key="normal" title="Share to Facebook">
-                                    <color key="titleColor" red="0.97010963221801683" green="1" blue="0.96970208276939673" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareToFacebook:" destination="sEY-dV-Az6" eventType="touchUpInside" id="dgv-Z9-a7i"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go2-LW-jAi">
-                                <frame key="frameInset" minX="82" minY="517" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                <state key="normal" title="Share to Twitter">
-                                    <color key="titleColor" red="0.97818533737475011" green="1" blue="0.97581566922710261" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareToTwitter:" destination="sEY-dV-Az6" eventType="touchUpInside" id="GMx-k2-NzC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoJ-IX-JcF">
-                                <frame key="frameInset" minX="61" minY="88" width="246" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="cameraButtonPressed:" destination="sEY-dV-Az6" eventType="touchUpInside" id="TaX-HQ-oek"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23O-xC-oPJ">
-                                <frame key="frameInset" minX="67" minY="361" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                <state key="normal" title="Check Merchandise">
-                                    <color key="titleColor" red="0.98456672510414489" green="1" blue="0.97699526240294632" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkWares:" destination="sEY-dV-Az6" eventType="touchUpInside" id="fsJ-e5-TM2"/>
-                                    <segue destination="EIe-rg-3Vt" kind="show" id="OJJ-NP-tRb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ax-dN-1uY">
-                                <frame key="frameInset" minX="92" minY="590" width="185" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                <state key="normal" title="Edit Profile Info">
-                                    <color key="titleColor" red="0.98456672509999998" green="1" blue="0.97699526240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkWares:" destination="sEY-dV-Az6" eventType="touchUpInside" id="sfG-86-2Pq"/>
-                                    <segue destination="sIJ-zp-feF" kind="show" id="FyN-c7-83M"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="umQ-zZ-KB6">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="GZa-7W-JME">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNI-ze-wHq">
-                                    <frame key="frameInset" minX="23" minY="-4" width="105" height="29"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" red="0.96707999588689131" green="1" blue="0.96642436810642074" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="profilePicture" destination="2S6-FO-Ta8" id="6Qq-oo-fbK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k9f-E5-PIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5440.8000000000002" y="-578.86056971514245"/>
-        </scene>
-        <!--Manage Items-->
-        <scene sceneID="UKl-34-Ias">
-            <objects>
-                <tableViewController id="EIe-rg-3Vt" userLabel="Manage Items" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" id="zsD-nG-AWU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="manageItems" rowHeight="112" id="CpM-T6-9yT" userLabel="ManageItems" customClass="MerchantItemTableViewCell" customModule="Project_Three" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="112"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CpM-T6-9yT" id="Vwx-Xy-lxP">
-                                    <frame key="frameInset" width="375" height="111"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zj8-7d-kw8">
-                                            <frame key="frameInset" minX="8" minY="12" width="91" height="87"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GameName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywU-Nc-uhw">
-                                            <frame key="frameInset" minX="119" minY="25" width="218" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
-                                            <color key="textColor" red="0.98575991839999999" green="1" blue="0.97421771219999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Console" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQe-7d-CF3">
-                                            <frame key="frameInset" minX="119" minY="73" width="218" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
-                                            <color key="textColor" red="0.98575991839999999" green="1" blue="0.97421771219999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yre-H8-arW">
-                                            <frame key="frameInset" minX="297" minY="53" width="70" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
-                                            <color key="textColor" red="0.98575991839999999" green="1" blue="0.97421771219999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.3294117647" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="merchantItemConsole" destination="kQe-7d-CF3" id="Vpn-Jc-rpl"/>
-                                    <outlet property="merchantItemImage" destination="zj8-7d-kw8" id="DSo-e5-Y8I"/>
-                                    <outlet property="merchantItemName" destination="ywU-Nc-uhw" id="sG4-GC-Cbp"/>
-                                    <outlet property="merchantItemPrice" destination="yre-H8-arW" id="j2r-VF-F2W"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="EIe-rg-3Vt" id="D4K-bG-JdL"/>
-                            <outlet property="delegate" destination="EIe-rg-3Vt" id="Yy2-XY-Q4H"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Vzr-GA-PzK">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="FS3-Iy-p03">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manage Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRf-jD-b8p">
-                                    <frame key="frameInset" minX="-28" width="197" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
-                                    <color key="textColor" red="0.97637756876844561" green="1" blue="0.94555865775654746" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HHF-bu-jVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6208.8000000000002" y="-579.76011994002999"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="3mu-0f-Bo4">
             <objects>
@@ -1207,54 +941,51 @@
                             <tableViewSection id="oVv-iN-LkO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KwP-t5-bGv">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KwP-t5-bGv" id="igB-Uy-wXa">
-                                            <frame key="frameInset" width="375" height="299"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzI-FS-BTI">
-                                                    <frame key="frameInset" minX="87" minY="20" width="100" height="21"/>
+                                                    <rect key="frame" x="87" y="20" width="100" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                                     <color key="textColor" red="1" green="0.99236740131010537" blue="0.98572593958477162" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="-profile-edit-account-edit-profile-edit-user-sign-icon--icon-32" translatesAutoresizingMaskIntoConstraints="NO" id="klR-Jp-gmT">
-                                                    <frame key="frameInset" minX="15" minY="49" width="257" height="237"/>
+                                                    <rect key="frame" x="15" y="49" width="257" height="237"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mae-RW-BLO">
-                                                    <frame key="frameInset" minX="15" minY="75" width="250" height="211"/>
+                                                    <rect key="frame" x="15" y="75" width="250" height="211"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <connections>
-                                                        <segue destination="sEY-dV-Az6" kind="show" id="rDZ-vq-BUj"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="nKb-AT-w3i">
-                                        <rect key="frame" x="0.0" y="364" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="300" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nKb-AT-w3i" id="47Z-KT-C3g">
-                                            <frame key="frameInset" width="375" height="299"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sell Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-Tx-QIq">
-                                                    <frame key="frameInset" minX="63" minY="8" width="172" height="29"/>
+                                                    <rect key="frame" x="63" y="8" width="172" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                                     <color key="textColor" red="1" green="0.99074357551152759" blue="0.9836853231580901" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="payment_rates" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-hP-Cxg">
-                                                    <frame key="frameInset" minX="17" minY="45" width="245" height="234"/>
+                                                    <rect key="frame" x="17" y="45" width="245" height="234"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu6-2z-ZFA">
-                                                    <frame key="frameInset" minY="45" width="279" height="246"/>
+                                                    <rect key="frame" x="0.0" y="45" width="279" height="246"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="zM4-wJ-lak" kind="show" id="uVm-LL-jXQ"/>
@@ -1279,7 +1010,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQX-QX-w2s">
-                                    <frame key="frameInset" minX="17" minY="-8" width="116" height="33"/>
+                                    <rect key="frame" x="17" y="-8" width="116" height="33"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1307,7 +1038,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Game Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Rv-Mk-q9l">
-                                <frame key="frameInset" minX="71" minY="135" width="240" height="30"/>
+                                <rect key="frame" x="71" y="135" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94169427679999995" green="0.92446855090000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
@@ -1315,7 +1046,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Asking Price" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHB-u5-NiL">
-                                <frame key="frameInset" minX="70" minY="180" width="240" height="30"/>
+                                <rect key="frame" x="70" y="180" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.98876127830000005" blue="0.99063589330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
@@ -1323,7 +1054,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantity" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1AX-oH-JB2">
-                                <frame key="frameInset" minX="70" minY="224" width="240" height="30"/>
+                                <rect key="frame" x="70" y="224" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
@@ -1331,7 +1062,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Years Owned" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HoF-V5-m0I">
-                                <frame key="frameInset" minX="71" minY="269" width="240" height="30"/>
+                                <rect key="frame" x="71" y="269" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97518750109999996" green="0.98415819969999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
@@ -1339,7 +1070,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H8e-5d-W0j">
-                                <frame key="frameInset" minX="71" minY="88" width="240" height="30"/>
+                                <rect key="frame" x="71" y="88" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94169427679999995" green="0.92446855090000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
@@ -1347,36 +1078,36 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Console" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qke-rW-SOz">
-                                <frame key="frameInset" minX="69" minY="313" width="242" height="30"/>
+                                <rect key="frame" x="69" y="313" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a Picture of your Game!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98T-u8-UaH">
-                                <frame key="frameInset" minX="81" minY="361" width="220" height="23"/>
+                                <rect key="frame" x="81" y="361" width="220" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                 <color key="textColor" red="0.99984151315613201" green="1" blue="0.92732906426172534" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitpic_camera_icon" translatesAutoresizingMaskIntoConstraints="NO" id="le0-ih-Ea9">
-                                <frame key="frameInset" minX="41" minY="382" width="300" height="215"/>
+                                <rect key="frame" x="41" y="382" width="300" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2w-FM-oMn">
-                                <frame key="frameInset" minX="69" minY="361" width="242" height="236"/>
+                                <rect key="frame" x="69" y="361" width="242" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnU-OA-DSV">
-                                <frame key="frameInset" minX="70" minY="362" width="240" height="233"/>
+                                <rect key="frame" x="70" y="362" width="240" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="imageButtonPressed:" destination="zM4-wJ-lak" eventType="touchUpInside" id="b7D-lj-HEG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wk-uK-yPe">
-                                <frame key="frameInset" minX="135" minY="605" width="105" height="42"/>
+                                <rect key="frame" x="135" y="605" width="105" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -1397,7 +1128,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPe-Hz-B9Z">
-                                    <frame key="frameInset" minX="-5" width="161" height="21"/>
+                                    <rect key="frame" x="-5" y="0.0" width="161" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="0.99399011407488314" green="1" blue="0.95076338505221825" alpha="1" colorSpace="calibratedRGB"/>
@@ -1455,27 +1186,27 @@
                             <tableViewSection id="qXW-Pw-le9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="yaP-Nk-VHm">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yaP-Nk-VHm" id="Lbo-zQ-CVQ">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pk-Nf-X3a">
-                                                    <frame key="frameInset" minX="16" minY="10" width="343" height="231"/>
+                                                    <rect key="frame" x="16" y="10" width="343" height="231"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sega Genesis" translatesAutoresizingMaskIntoConstraints="NO" id="PYV-dL-KlQ" userLabel="Sega Genesis">
-                                                    <frame key="frameInset" minX="24" minY="18" width="327" height="213"/>
+                                                    <rect key="frame" x="24" y="18" width="327" height="213"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3d6-l9-XAc">
-                                                    <frame key="frameInset" minX="24" minY="18" width="126" height="27"/>
+                                                    <rect key="frame" x="24" y="18" width="126" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEGA Genesis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUU-IU-0Pc">
-                                                            <frame key="frameInset" minX="8" minY="3" width="145" height="21"/>
+                                                            <rect key="frame" x="8" y="3" width="145" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -1485,7 +1216,7 @@
                                                     <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-KZ-umI" userLabel="Genesis Button">
-                                                    <frame key="frameInset" minX="16" minY="10" width="343" height="229"/>
+                                                    <rect key="frame" x="16" y="10" width="343" height="229"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="VOM-Op-CVe" kind="show" id="8DP-J6-JUC"/>
@@ -1496,27 +1227,27 @@
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="ahy-26-3c3">
-                                        <rect key="frame" x="0.0" y="314" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="250" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ahy-26-3c3" id="l8L-ab-57R">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZT-WM-6k4">
-                                                    <frame key="frameInset" minX="16" minY="10" width="343" height="231"/>
+                                                    <rect key="frame" x="16" y="10" width="343" height="231"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sega Master" translatesAutoresizingMaskIntoConstraints="NO" id="y9h-PG-1xZ" userLabel="Sega Master">
-                                                    <frame key="frameInset" minX="24" minY="16" width="327" height="217"/>
+                                                    <rect key="frame" x="24" y="16" width="327" height="217"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZ4-8X-QS7">
-                                                    <frame key="frameInset" minX="24" minY="16" width="116" height="27"/>
+                                                    <rect key="frame" x="24" y="16" width="116" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEGA Master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flU-g2-tGw">
-                                                            <frame key="frameInset" minX="8" minY="3" width="102" height="21"/>
+                                                            <rect key="frame" x="8" y="3" width="102" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -1526,7 +1257,7 @@
                                                     <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAz-Us-4c4" userLabel="Master Button">
-                                                    <frame key="frameInset" minX="16" minY="8" width="343" height="233"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="233"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="VOM-Op-CVe" kind="show" id="JpN-DG-5Sx"/>
@@ -1537,26 +1268,26 @@
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.32941176470588235" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="S7H-6D-8IM">
-                                        <rect key="frame" x="0.0" y="564" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="500" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S7H-6D-8IM" id="bMo-qj-X48">
-                                            <frame key="frameInset" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JP3-Ao-knG" userLabel="Game Gear">
-                                                    <frame key="frameInset" minX="16" minY="8" width="343" height="233"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="233"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameGear" translatesAutoresizingMaskIntoConstraints="NO" id="ViQ-lS-yRG" userLabel="Sega Game Gear">
-                                                            <frame key="frameInset" minX="9" minY="10" width="325" height="213"/>
+                                                            <rect key="frame" x="9" y="10" width="325" height="213"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p26-St-i5F">
-                                                            <frame key="frameInset" width="153" height="27"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="153" height="27"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEGA GameGear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGV-Lw-A4I">
-                                                                    <frame key="frameInset" minX="8" minY="3" width="145" height="21"/>
+                                                                    <rect key="frame" x="8" y="3" width="145" height="21"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -1566,7 +1297,7 @@
                                                             <color key="backgroundColor" red="1" green="0.8806406779" blue="0.039468003969999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLs-Wd-YiO" userLabel="Game Gear Button">
-                                                            <frame key="frameInset" minY="-7" width="343" height="246"/>
+                                                            <rect key="frame" x="0.0" y="-7" width="343" height="246"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <connections>
                                                                 <segue destination="VOM-Op-CVe" kind="show" id="ogG-Ht-WJ2"/>
@@ -1594,7 +1325,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEGA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcQ-ep-F6X">
-                                    <frame key="frameInset" minX="38" minY="-4" width="74" height="29"/>
+                                    <rect key="frame" x="38" y="-4" width="74" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                     <color key="textColor" red="1" green="0.97972451468838317" blue="0.9964575983107401" alpha="1" colorSpace="calibratedRGB"/>

@@ -10,7 +10,6 @@
 		79AF1F43D0815015B5FCB1E8 /* Pods_Project_Three.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FF827577400B9835346E33 /* Pods_Project_Three.framework */; };
 		8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD89B1DA81C410099DE1E /* GameInfo.swift */; };
 		8B6BD8A01DA81C670099DE1E /* GamesListClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD89F1DA81C670099DE1E /* GamesListClass.swift */; };
-		8B6BD8A21DA81C6F0099DE1E /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD8A11DA81C6F0099DE1E /* GamesListViewController.swift */; };
 		8B6BD8A81DA820B50099DE1E /* Gamecube.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8A31DA820B50099DE1E /* Gamecube.gif */; };
 		8B6BD8A91DA820B50099DE1E /* GBA.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8A41DA820B50099DE1E /* GBA.gif */; };
 		8B6BD8AE1DA820EB0099DE1E /* NintendoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */; };
@@ -18,7 +17,6 @@
 		8B6BD8B21DA824BA0099DE1E /* Nintendo64.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B11DA824BA0099DE1E /* Nintendo64.gif */; };
 		8B6BD8B61DA82EC60099DE1E /* Playstation2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */; };
 		8B6BD8B81DA834560099DE1E /* Playstation1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B71DA834560099DE1E /* Playstation1.gif */; };
-		8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */; };
 		8B8618061DB09D3300B355B5 /* GameInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */; };
 		8B8618081DB09F1B00B355B5 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */; };
 		8B86180B1DB0C3C300B355B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86180A1DB0C3C300B355B5 /* ProfileViewController.swift */; };
@@ -50,7 +48,6 @@
 		79FF827577400B9835346E33 /* Pods_Project_Three.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Three.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6BD89B1DA81C410099DE1E /* GameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
 		8B6BD89F1DA81C670099DE1E /* GamesListClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListClass.swift; sourceTree = "<group>"; };
-		8B6BD8A11DA81C6F0099DE1E /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		8B6BD8A31DA820B50099DE1E /* Gamecube.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Gamecube.gif; sourceTree = "<group>"; };
 		8B6BD8A41DA820B50099DE1E /* GBA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GBA.gif; sourceTree = "<group>"; };
 		8B6BD8AD1DA820EB0099DE1E /* NintendoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NintendoTableViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		8B6BD8B11DA824BA0099DE1E /* Nintendo64.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nintendo64.gif; sourceTree = "<group>"; };
 		8B6BD8B51DA82EC60099DE1E /* Playstation2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation2.gif; sourceTree = "<group>"; };
 		8B6BD8B71DA834560099DE1E /* Playstation1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Playstation1.gif; sourceTree = "<group>"; };
-		8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableViewCell.swift; sourceTree = "<group>"; };
 		8B8618051DB09D3300B355B5 /* GameInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInformationViewController.swift; sourceTree = "<group>"; };
 		8B8618071DB09F1B00B355B5 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
 		8B86180A1DB0C3C300B355B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -121,15 +117,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8B8618041DB09C8B00B355B5 /* Old */ = {
-			isa = PBXGroup;
-			children = (
-				8B6BD8A11DA81C6F0099DE1E /* GamesListViewController.swift */,
-				8B6BD8B91DA85FBD0099DE1E /* GamesListTableViewCell.swift */,
-			);
-			name = Old;
-			sourceTree = "<group>";
-		};
 		8B8618091DB0C3A800B355B5 /* Merchant View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +156,6 @@
 				8B8618091DB0C3A800B355B5 /* Merchant View Controllers */,
 				8BCD13121DA6C22800185AB3 /* User View Controllers */,
 				8BC6369B1DA73934008CAF3C /* Gif */,
-				8B8618041DB09C8B00B355B5 /* Old */,
 			);
 			path = "Project Three";
 			sourceTree = "<group>";
@@ -368,7 +354,6 @@
 				8BB070271DA3334F007798D6 /* ViewController.swift in Sources */,
 				8B86180F1DB0C9FF00B355B5 /* CheckoutTableViewCell.swift in Sources */,
 				8B8618061DB09D3300B355B5 /* GameInformationViewController.swift in Sources */,
-				8B6BD8BA1DA85FBD0099DE1E /* GamesListTableViewCell.swift in Sources */,
 				8B6BD8AE1DA820EB0099DE1E /* NintendoTableViewController.swift in Sources */,
 				8B86180B1DB0C3C300B355B5 /* ProfileViewController.swift in Sources */,
 				8B6BD89C1DA81C410099DE1E /* GameInfo.swift in Sources */,
@@ -380,7 +365,6 @@
 				8BB070251DA3334F007798D6 /* AppDelegate.swift in Sources */,
 				8BC5C85F1DAC6FDE006BBA63 /* SettingsViewController.swift in Sources */,
 				8BB2767A1DAC524400553A20 /* AddItem.swift in Sources */,
-				8B6BD8A21DA81C6F0099DE1E /* GamesListViewController.swift in Sources */,
 				8BC5C8691DAD72C0006BBA63 /* SignUpViewController.swift in Sources */,
 				8B8706411DB0120600896FE8 /* GameSelectionCollectionViewCell.swift in Sources */,
 				8BCD12E11DA5BF7300185AB3 /* LoginViewController.swift in Sources */,
